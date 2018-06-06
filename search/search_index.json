@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "mysql \u5f00\u53d1\u5b9e\u6218\u6280\u5de7\n#",
+            "title": "\u9996\u9875"
+        },
+        {
+            "location": "/#mysql",
+            "text": "",
+            "title": "mysql \u5f00\u53d1\u5b9e\u6218\u6280\u5de7"
+        },
+        {
+            "location": "/sports-acrobatics/",
+            "text": "\u5f00\u53d1\u6280\u5de7\n#",
+            "title": "\u6280\u5de7"
+        },
+        {
+            "location": "/sports-acrobatics/#_1",
+            "text": "",
+            "title": "\u5f00\u53d1\u6280\u5de7"
+        },
+        {
+            "location": "/performance-optimization/",
+            "text": "\u6027\u80fd\u4f18\u5316\n#",
+            "title": "\u4f18\u5316"
+        },
+        {
+            "location": "/performance-optimization/#_1",
+            "text": "",
+            "title": "\u6027\u80fd\u4f18\u5316"
+        }
+    ]
+}
