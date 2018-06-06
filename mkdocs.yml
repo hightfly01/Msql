@@ -1,0 +1,40 @@
+site_name: mysql-notebook
+
+# readthedocs   material
+theme:  material
+use_directory_urls: true
+
+docs_dir: 'docs'
+
+
+pages:
+- 首页: 'index.md'
+- 技巧: 'sports-acrobatics.md'
+- 优化: 'performance-optimization.md'
+
+
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/hightfly01/Msql-notebook'
+
+
+# Copyright
+copyright: 'Copyright (c) 2018 hightfly'
+
+
+extra:
+  palette:
+    primary: 'blue grey'
+    accent: 'blue grey'
+  author:
+    github: 'hightfly01'
+
+
+# Extensions
+markdown_extensions:
+  #高亮
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
