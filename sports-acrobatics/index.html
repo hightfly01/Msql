@@ -245,27 +245,6 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
-      开发技巧
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        开发技巧
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
@@ -443,10 +422,10 @@
     
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
@@ -455,10 +434,10 @@
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
@@ -467,21 +446,16 @@
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
     <a href="../delete_data_by_id/" title="利用主键删除重复数据的SQL技巧" class="md-nav__link">
       利用主键删除重复数据的SQL技巧
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -680,10 +654,10 @@
                 
                 <h1 id="join">正确使用join从句<a class="headerlink" href="#join" title="Permanent link">#</a></h1>
 <h2 id="1-sqljoin">1. SQL标准中Join的类型<a class="headerlink" href="#1-sqljoin" title="Permanent link">#</a></h2>
-<p><img alt="sql中join类型" src="../img/sql中join类型.png" /></p>
+<p><img alt="sql中join类型" src="../../img/sql中join类型.png" /></p>
 <h2 id="2-inner-join">2. Inner Join(内连接)<a class="headerlink" href="#2-inner-join" title="Permanent link">#</a></h2>
 <h3 id="2-1-inner-join">2-1: 什么inner join？<a class="headerlink" href="#2-1-inner-join" title="Permanent link">#</a></h3>
-<p><img alt="inner-join" src="../img/inner-join.png" /></p>
+<p><img alt="inner-join" src="../../img/inner-join.png" /></p>
 <h3 id="2-2">2-2: 实例演示<a class="headerlink" href="#2-2" title="Permanent link">#</a></h3>
 <div class="code"><pre><span></span>select a.user_name, a.over, b.over from user1 a
 inner join user2 b on a.user_name = b.user_name;
@@ -692,7 +666,7 @@ inner join user2 b on a.user_name = b.user_name;
 
 <h2 id="3-left-outer-join">3. Left Outer Join(左外连接)<a class="headerlink" href="#3-left-outer-join" title="Permanent link">#</a></h2>
 <h3 id="3-1">3-1: 什么左外连接<a class="headerlink" href="#3-1" title="Permanent link">#</a></h3>
-<p><img alt="左外连接" src="../img/左外连接.png" /></p>
+<p><img alt="左外连接" src="../../img/左外连接.png" /></p>
 <h3 id="3-2">3-2: 实例演示<a class="headerlink" href="#3-2" title="Permanent link">#</a></h3>
 <div class="code"><pre><span></span># 查询出user1表中的信息，如果user2在user1中没有，以NULL的显示。
 
@@ -709,19 +683,19 @@ where b.user_name IS NOT NULL;
 
 <h2 id="4-right-outer-join">4. Right Outer join (右外连接)<a class="headerlink" href="#4-right-outer-join" title="Permanent link">#</a></h2>
 <h3 id="4-1">4-1：什么是右外连接<a class="headerlink" href="#4-1" title="Permanent link">#</a></h3>
-<p><img alt="右外连接" src="../img/右外连接.png" /></p>
+<p><img alt="右外连接" src="../../img/右外连接.png" /></p>
 <h2 id="5-full-join">5. Full join 全连接<a class="headerlink" href="#5-full-join" title="Permanent link">#</a></h2>
 <h3 id="5-1">5-1： 什么是全连接<a class="headerlink" href="#5-1" title="Permanent link">#</a></h3>
-<p><img alt="全连接" src="../img/全连接.png" /></p>
+<p><img alt="全连接" src="../../img/全连接.png" /></p>
 <h3 id="5-2full-join">5-2：Full join 带来的问题<a class="headerlink" href="#5-2full-join" title="Permanent link">#</a></h3>
-<p><img alt="full-join带来的问题" src="../img/full-join带来的问题.png" /></p>
+<p><img alt="full-join带来的问题" src="../../img/full-join带来的问题.png" /></p>
 <h3 id="5-3-union-all">5-3： union all合并解决问题<a class="headerlink" href="#5-3-union-all" title="Permanent link">#</a></h3>
-<p><img alt="union-all实现全连接" src="../img/union-all实现全连接.png" /></p>
+<p><img alt="union-all实现全连接" src="../../img/union-all实现全连接.png" /></p>
 <h2 id="6cross-join">6.Cross Join(交叉连接)<a class="headerlink" href="#6cross-join" title="Permanent link">#</a></h2>
 <h3 id="6-1">6-1：什么交叉连接<a class="headerlink" href="#6-1" title="Permanent link">#</a></h3>
-<p><img alt="交叉连接" src="../img/交叉连接.png" /></p>
+<p><img alt="交叉连接" src="../../img/交叉连接.png" /></p>
 <h3 id="6-2">6-2：交叉连接实现<a class="headerlink" href="#6-2" title="Permanent link">#</a></h3>
-<p><img alt="交叉连接实现" src="../img/交叉连接实现.png" /></p>
+<p><img alt="交叉连接实现" src="../../img/交叉连接实现.png" /></p>
                 
                   
                 
