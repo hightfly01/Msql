@@ -2,11 +2,11 @@
 ## 1. 使用join更新表
 user1表：
 
-![user1](../img/user1.png)   
+![user1](img/user1.png)   
 
 user2表
 
-![user2](../img/user2.png)
+![user2](img/user2.png)
 
 ### 1-1： 演示
 
