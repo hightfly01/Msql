@@ -4,23 +4,43 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-06</lastmod>
+     <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
      <loc>/sports-acrobatics/</loc>
-     <lastmod>2018-06-06</lastmod>
+     <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/sql-join-jq/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/h_and_l_zh/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/delete_data_by_id/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
     <url>
      <loc>/performance-optimization/</loc>
-     <lastmod>2018-06-06</lastmod>
+     <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

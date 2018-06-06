@@ -36,7 +36,7 @@
     
     
       
-        <title>正确使用join从句 - mysql-notebook</title>
+        <title>与join相关的SQL技巧 - mysql-notebook</title>
       
     
     
@@ -115,7 +115,7 @@
                 mysql-notebook
               </span>
               <span class="md-header-nav__topic">
-                正确使用join从句
+                与join相关的SQL技巧
               </span>
             
           
@@ -263,6 +263,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../sports-acrobatics/" title="正确使用join从句" class="md-nav__link">
+      正确使用join从句
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -274,11 +286,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        正确使用join从句
+        与join相关的SQL技巧
       </label>
     
-    <a href="./" title="正确使用join从句" class="md-nav__link md-nav__link--active">
-      正确使用join从句
+    <a href="./" title="与join相关的SQL技巧" class="md-nav__link md-nav__link--active">
+      与join相关的SQL技巧
     </a>
     
       
@@ -292,30 +304,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-sqljoin" title="1. SQL标准中Join的类型" class="md-nav__link">
-    1. SQL标准中Join的类型
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-inner-join" title="2. Inner Join(内连接)" class="md-nav__link">
-    2. Inner Join(内连接)
+  <a href="#1-join" title="1. 使用join更新表" class="md-nav__link">
+    1. 使用join更新表
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2-1-inner-join" title="2-1: 什么inner join？" class="md-nav__link">
-    2-1: 什么inner join？
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
-    2-2: 实例演示
+  <a href="#1-1" title="1-1： 演示" class="md-nav__link">
+    1-1： 演示
   </a>
   
 </li>
@@ -326,23 +324,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-left-outer-join" title="3. Left Outer Join(左外连接)" class="md-nav__link">
-    3. Left Outer Join(左外连接)
+  <a href="#2-join" title="2. 使用join优化子查询" class="md-nav__link">
+    2. 使用join优化子查询
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-1" title="3-1: 什么左外连接" class="md-nav__link">
-    3-1: 什么左外连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-2" title="3-2: 实例演示" class="md-nav__link">
-    3-2: 实例演示
+  <a href="#2-1" title="2-1：实例" class="md-nav__link">
+    2-1：实例
   </a>
   
 </li>
@@ -353,16 +344,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-right-outer-join" title="4. Right Outer join (右外连接)" class="md-nav__link">
-    4. Right Outer join (右外连接)
+  <a href="#3-join" title="3. 使用join优化子聚合子查询" class="md-nav__link">
+    3. 使用join优化子聚合子查询
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4-1" title="4-1：什么是右外连接" class="md-nav__link">
-    4-1：什么是右外连接
+  <a href="#3-1" title="3-1：实例说明" class="md-nav__link">
+    3-1：实例说明
   </a>
   
 </li>
@@ -373,63 +364,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-full-join" title="5. Full join 全连接" class="md-nav__link">
-    5. Full join 全连接
+  <a href="#4-join" title="4. 使用join实现分组选择数据" class="md-nav__link">
+    4. 使用join实现分组选择数据
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#5-1" title="5-1： 什么是全连接" class="md-nav__link">
-    5-1： 什么是全连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-2full-join" title="5-2：Full join 带来的问题" class="md-nav__link">
-    5-2：Full join 带来的问题
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-3-union-all" title="5-3： union all合并解决问题" class="md-nav__link">
-    5-3： union all合并解决问题
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6cross-join" title="6.Cross Join(交叉连接)" class="md-nav__link">
-    6.Cross Join(交叉连接)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#6-1" title="6-1：什么交叉连接" class="md-nav__link">
-    6-1：什么交叉连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-2" title="6-2：交叉连接实现" class="md-nav__link">
-    6-2：交叉连接实现
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -441,18 +378,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../sql-join-jq/" title="与join相关的SQL技巧" class="md-nav__link">
-      与join相关的SQL技巧
-    </a>
   </li>
 
         
@@ -518,30 +443,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-sqljoin" title="1. SQL标准中Join的类型" class="md-nav__link">
-    1. SQL标准中Join的类型
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-inner-join" title="2. Inner Join(内连接)" class="md-nav__link">
-    2. Inner Join(内连接)
+  <a href="#1-join" title="1. 使用join更新表" class="md-nav__link">
+    1. 使用join更新表
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2-1-inner-join" title="2-1: 什么inner join？" class="md-nav__link">
-    2-1: 什么inner join？
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
-    2-2: 实例演示
+  <a href="#1-1" title="1-1： 演示" class="md-nav__link">
+    1-1： 演示
   </a>
   
 </li>
@@ -552,23 +463,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-left-outer-join" title="3. Left Outer Join(左外连接)" class="md-nav__link">
-    3. Left Outer Join(左外连接)
+  <a href="#2-join" title="2. 使用join优化子查询" class="md-nav__link">
+    2. 使用join优化子查询
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-1" title="3-1: 什么左外连接" class="md-nav__link">
-    3-1: 什么左外连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-2" title="3-2: 实例演示" class="md-nav__link">
-    3-2: 实例演示
+  <a href="#2-1" title="2-1：实例" class="md-nav__link">
+    2-1：实例
   </a>
   
 </li>
@@ -579,16 +483,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-right-outer-join" title="4. Right Outer join (右外连接)" class="md-nav__link">
-    4. Right Outer join (右外连接)
+  <a href="#3-join" title="3. 使用join优化子聚合子查询" class="md-nav__link">
+    3. 使用join优化子聚合子查询
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4-1" title="4-1：什么是右外连接" class="md-nav__link">
-    4-1：什么是右外连接
+  <a href="#3-1" title="3-1：实例说明" class="md-nav__link">
+    3-1：实例说明
   </a>
   
 </li>
@@ -599,63 +503,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-full-join" title="5. Full join 全连接" class="md-nav__link">
-    5. Full join 全连接
+  <a href="#4-join" title="4. 使用join实现分组选择数据" class="md-nav__link">
+    4. 使用join实现分组选择数据
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#5-1" title="5-1： 什么是全连接" class="md-nav__link">
-    5-1： 什么是全连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-2full-join" title="5-2：Full join 带来的问题" class="md-nav__link">
-    5-2：Full join 带来的问题
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-3-union-all" title="5-3： union all合并解决问题" class="md-nav__link">
-    5-3： union all合并解决问题
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6cross-join" title="6.Cross Join(交叉连接)" class="md-nav__link">
-    6.Cross Join(交叉连接)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#6-1" title="6-1：什么交叉连接" class="md-nav__link">
-    6-1：什么交叉连接
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-2" title="6-2：交叉连接实现" class="md-nav__link">
-    6-2：交叉连接实现
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -675,53 +525,71 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/sports-acrobatics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/sql-join-jq.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="join">正确使用join从句<a class="headerlink" href="#join" title="Permanent link">#</a></h1>
-<h2 id="1-sqljoin">1. SQL标准中Join的类型<a class="headerlink" href="#1-sqljoin" title="Permanent link">#</a></h2>
-<p><img alt="sql中join类型" src="../../img/sql中join类型.png" /></p>
-<h2 id="2-inner-join">2. Inner Join(内连接)<a class="headerlink" href="#2-inner-join" title="Permanent link">#</a></h2>
-<h3 id="2-1-inner-join">2-1: 什么inner join？<a class="headerlink" href="#2-1-inner-join" title="Permanent link">#</a></h3>
-<p><img alt="inner-join" src="../../img/inner-join.png" /></p>
-<h3 id="2-2">2-2: 实例演示<a class="headerlink" href="#2-2" title="Permanent link">#</a></h3>
-<div class="code"><pre><span></span>select a.user_name, a.over, b.over from user1 a
-inner join user2 b on a.user_name = b.user_name;
+                <h1 id="join">使用join更新表<a class="headerlink" href="#join" title="Permanent link">#</a></h1>
+<h2 id="1-join">1. 使用join更新表<a class="headerlink" href="#1-join" title="Permanent link">#</a></h2>
+<p>user1表：</p>
+<p><img alt="user1" src="../../img/user1.png" />   </p>
+<p>user2表</p>
+<p><img alt="user2" src="../../img/user2.png" /></p>
+<h3 id="1-1">1-1： 演示<a class="headerlink" href="#1-1" title="Permanent link">#</a></h3>
+<blockquote>
+<p>需求：更新user1表中，user_name 在user1表中和user2表中同时存在的over字段</p>
+<p>实现思路：</p>
+<ol>
+<li>内连接查询user1和user2表中user_name 相同的数据</li>
+<li>使用join 将 步骤1 查询的数据，进行内连接，来更新user1表。</li>
+</ol>
+</blockquote>
+<div class="code"><pre><span></span>update user1 a join (select b.user_name from user1 a join user2 b  
+
+on a.user_name=b.user_name) b on a.user_name=b.user_name set
+
+a.over=&#39;家&#39;;
 </pre></div>
 
 
-<h2 id="3-left-outer-join">3. Left Outer Join(左外连接)<a class="headerlink" href="#3-left-outer-join" title="Permanent link">#</a></h2>
-<h3 id="3-1">3-1: 什么左外连接<a class="headerlink" href="#3-1" title="Permanent link">#</a></h3>
-<p><img alt="左外连接" src="../../img/左外连接.png" /></p>
-<h3 id="3-2">3-2: 实例演示<a class="headerlink" href="#3-2" title="Permanent link">#</a></h3>
-<div class="code"><pre><span></span># 查询出user1表中的信息，如果user2在user1中没有，以NULL的显示。
+<h2 id="2-join">2. 使用join优化子查询<a class="headerlink" href="#2-join" title="Permanent link">#</a></h2>
+<h3 id="2-1">2-1：实例<a class="headerlink" href="#2-1" title="Permanent link">#</a></h3>
+<p><img alt="使用join优化子查询" src="../../img/使用join优化子查询.png" /></p>
+<h2 id="3-join">3. 使用join优化子聚合子查询<a class="headerlink" href="#3-join" title="Permanent link">#</a></h2>
+<h3 id="3-1">3-1：实例说明<a class="headerlink" href="#3-1" title="Permanent link">#</a></h3>
+<p><img alt="使用join优化子聚合子查询" src="../../img/使用join优化子聚合子查询.png" /></p>
+<h2 id="4-join">4. 使用join实现分组选择数据<a class="headerlink" href="#4-join" title="Permanent link">#</a></h2>
+<p>user1表</p>
+<p><img alt="user1表" src="../../img/user1表.png" /></p>
+<p>kills表</p>
+<p><img alt="kills表" src="../../img/kills表.png" /></p>
+<blockquote>
+<p>需求：</p>
+<p>结合user1和kills表，查询user1表中的user_name ,</p>
+<p>在kills表中对应的kills数量排行前两名的数据显示出来</p>
+</blockquote>
+<div class="code"><pre><span></span>mysql&gt; select d.user_name, c.kills from
 
-select a.user_name, a.over, b.over from user1 a
-left join user2 b on a.user_name = b.user_name;
+(select user_id, kills, (select count(*) from kills b where
 
+b.user_id=a.user_id and a.kills &lt;= b.kills) as count from kills a  
 
-# 查询出user1表的信息，以及user2在user1中有的
-select a.user_name, a.over, b.over from user1 a
-left join user2 b on a.user_name = b.user_name
-where b.user_name IS NOT NULL;
+group by user_id, kills) c
+
+join user1 d on c.user_id=d.id where count&lt;=2;
+
++-----------+-------+
+| user_name | kills |
++-----------+-------+
+| Tom       |    55 |
+| Tom       |    44 |
+| jack      |    44 |
+| jack      |    23 |
+| cc        |    33 |
+| cc        |    22 |
+| fly       |     2 |
++-----------+-------+
+7 rows in set (0.00 sec)
 </pre></div>
-
-
-<h2 id="4-right-outer-join">4. Right Outer join (右外连接)<a class="headerlink" href="#4-right-outer-join" title="Permanent link">#</a></h2>
-<h3 id="4-1">4-1：什么是右外连接<a class="headerlink" href="#4-1" title="Permanent link">#</a></h3>
-<p><img alt="右外连接" src="../../img/右外连接.png" /></p>
-<h2 id="5-full-join">5. Full join 全连接<a class="headerlink" href="#5-full-join" title="Permanent link">#</a></h2>
-<h3 id="5-1">5-1： 什么是全连接<a class="headerlink" href="#5-1" title="Permanent link">#</a></h3>
-<p><img alt="全连接" src="../../img/全连接.png" /></p>
-<h3 id="5-2full-join">5-2：Full join 带来的问题<a class="headerlink" href="#5-2full-join" title="Permanent link">#</a></h3>
-<p><img alt="full-join带来的问题" src="../../img/full-join带来的问题.png" /></p>
-<h3 id="5-3-union-all">5-3： union all合并解决问题<a class="headerlink" href="#5-3-union-all" title="Permanent link">#</a></h3>
-<p><img alt="union-all实现全连接" src="../../img/union-all实现全连接.png" /></p>
-<h2 id="6cross-join">6.Cross Join(交叉连接)<a class="headerlink" href="#6cross-join" title="Permanent link">#</a></h2>
-<h3 id="6-1">6-1：什么交叉连接<a class="headerlink" href="#6-1" title="Permanent link">#</a></h3>
-<p><img alt="交叉连接" src="../../img/交叉连接.png" /></p>
-<h3 id="6-2">6-2：交叉连接实现<a class="headerlink" href="#6-2" title="Permanent link">#</a></h3>
-<p><img alt="交叉连接实现" src="../../img/交叉连接实现.png" /></p>
                 
                   
                 
@@ -742,7 +610,7 @@ where b.user_name IS NOT NULL;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="首页" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../sports-acrobatics/" title="正确使用join从句" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -751,19 +619,19 @@ where b.user_name IS NOT NULL;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                首页
+                正确使用join从句
               </span>
             </div>
           </a>
         
         
-          <a href="../sql-join-jq/" title="与join相关的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../h_and_l_zh/" title="行列相互转化的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                与join相关的SQL技巧
+                行列相互转化的SQL技巧
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
