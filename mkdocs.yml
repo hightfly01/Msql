@@ -9,13 +9,11 @@ docs_dir: 'docs'
 
 pages:
 - 首页: 'index.md'
-- 正确使用join从句: 'sports-acrobatics.md'
-- 与join相关的SQL技巧: 'sql-join-jq.md'
-- 行列相互转化的SQL技巧: 'h_and_l_zh.md'
-- 利用主键删除重复数据的SQL技巧: 'delete_data_by_id.md'
-
-
-
+- 开发技巧:
+  - 正确使用join从句: 'sports-acrobatics.md'
+  - 与join相关的SQL技巧: 'sql-join-jq.md'
+  - 行列相互转化的SQL技巧: 'h_and_l_zh.md'
+  - 利用主键删除重复数据的SQL技巧: 'delete_data_by_id.md'
 
 - 优化: 'performance-optimization.md'
 
