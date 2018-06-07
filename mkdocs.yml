@@ -1,7 +1,7 @@
 site_name: mysql-notebook
 
 # readthedocs   material
-theme:  material
+theme:  readthedocs
 use_directory_urls: true
 
 docs_dir: 'docs'
@@ -9,15 +9,27 @@ docs_dir: 'docs'
 
 pages:
 - 首页: 'index.md'
-- 开发技巧:
-  - 正确使用join从句: 'one.md'
-  - 与join相关的SQL技巧: 'two.md'
-  - 行列相互转化的SQL技巧: 'tree.md'
-  - 利用主键删除重复数据的SQL技巧: 'four.md'
 
-- 性能优化: 
-  - 优化-1: 'yh-1.md'
-  - 优化-2: 'yh-2.md'
+- 开发技巧:
+  - 正确使用join从句: 'jq/1.md'
+  - 与join相关的SQL技巧: 'jq/2.md'
+  - 行列相互转化的SQL技巧: 'jq/3.md'
+  - 利用主键删除重复数据的SQL技巧: 'jq/4.md'
+  - 子查询中实现多列过滤的SQL技巧: 'jq/5.md'
+  - 同一属性的多值过滤的SQL技巧: 'jq/6.md'
+
+
+
+- 性能优化:
+  - 影响数据库性能几个方面: 'yh/1.md'
+  - 存储引擎: 'yh/2.md'
+  - 索引优化: 'yh/3.md'
+  - SQL查询优化: 'yh/4.md'
+  - 分库分表: 'yh/5.md'
+  - 事务: 'yh/6.md'
+  - 慢查询的开启和分析: 'yh/7.md'
+
+
 
 
 
