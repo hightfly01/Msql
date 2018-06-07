@@ -9,15 +9,15 @@ docs_dir: 'docs'
 
 pages:
 - 首页: 'index.md'
-- 技巧:
-      - 正确使用join从句: 'one.md'
-      - 与join相关的SQL技巧: 'two.md'
-      - 行列相互转化的SQL技巧: 'tree.md'
-      - 利用主键删除重复数据的SQL技巧: 'four.md'
 
-- 优化:
-      - 优化-1: 'yh-1.md'
-      - 优化-2: 'yh-2.md'
+- 正确使用join从句: 'one.md'
+- 与join相关的SQL技巧: 'two.md'
+- 行列相互转化的SQL技巧: 'tree.md'
+- 利用主键删除重复数据的SQL技巧: 'four.md'
+
+
+- 优化-1: 'yh-1.md'
+- 优化-2: 'yh-2.md'
 
 
 
