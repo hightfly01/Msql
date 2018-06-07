@@ -1,7 +1,7 @@
 site_name: mysql-notebook
 
 # readthedocs   material
-theme:  readthedocs
+theme:  material
 use_directory_urls: true
 
 docs_dir: 'docs'
