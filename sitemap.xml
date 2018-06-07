@@ -10,43 +10,47 @@
     
 
     
+        
     <url>
-     <loc>/sports-acrobatics/</loc>
+     <loc>/one/</loc>
      <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/two/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tree/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/four/</loc>
+     <lastmod>2018-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
+        
     <url>
-     <loc>/sql-join-jq/</loc>
+     <loc>/yh-1/</loc>
      <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/h_and_l_zh/</loc>
+     <loc>/yh-2/</loc>
      <lastmod>2018-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-    <url>
-     <loc>/delete_data_by_id/</loc>
-     <lastmod>2018-06-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/performance-optimization/</loc>
-     <lastmod>2018-06-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+        
     
 
 </urlset>

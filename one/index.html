@@ -36,7 +36,7 @@
     
     
       
-        <title>行列相互转化的SQL技巧 - mysql-notebook</title>
+        <title>正确使用join从句 - mysql-notebook</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#sql" tabindex="1" class="md-skip">
+      <a href="#join" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
                 mysql-notebook
               </span>
               <span class="md-header-nav__topic">
-                行列相互转化的SQL技巧
+                正确使用join从句
               </span>
             
           
@@ -242,29 +242,26 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../sports-acrobatics/" title="正确使用join从句" class="md-nav__link">
-      正确使用join从句
-    </a>
-  </li>
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../sql-join-jq/" title="与join相关的SQL技巧" class="md-nav__link">
-      与join相关的SQL技巧
-    </a>
-  </li>
-
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-      
-      
-      
+    <label class="md-nav__link" for="nav-2">
+      技巧
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        技巧
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
   
 
@@ -277,11 +274,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        行列相互转化的SQL技巧
+        正确使用join从句
       </label>
     
-    <a href="./" title="行列相互转化的SQL技巧" class="md-nav__link md-nav__link--active">
-      行列相互转化的SQL技巧
+    <a href="./" title="正确使用join从句" class="md-nav__link md-nav__link--active">
+      正确使用join从句
     </a>
     
       
@@ -295,23 +292,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" title="1. 行转列的场景" class="md-nav__link">
-    1. 行转列的场景
+  <a href="#1-sqljoin" title="1. SQL标准中Join的类型" class="md-nav__link">
+    1. SQL标准中Join的类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-inner-join" title="2. Inner Join(内连接)" class="md-nav__link">
+    2. Inner Join(内连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-1" title="1-1：使用自连接方式实现行转列" class="md-nav__link">
-    1-1：使用自连接方式实现行转列
+  <a href="#2-1-inner-join" title="2-1: 什么inner join？" class="md-nav__link">
+    2-1: 什么inner join？
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1-2case" title="1-2：使用case语句实现行转列" class="md-nav__link">
-    1-2：使用case语句实现行转列
+  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
+    2-2: 实例演示
   </a>
   
 </li>
@@ -322,23 +326,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" title="2.单列转多行" class="md-nav__link">
-    2.单列转多行
+  <a href="#3-left-outer-join" title="3. Left Outer Join(左外连接)" class="md-nav__link">
+    3. Left Outer Join(左外连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2-1" title="2-1：使用场景" class="md-nav__link">
-    2-1：使用场景
+  <a href="#3-1" title="3-1: 什么左外连接" class="md-nav__link">
+    3-1: 什么左外连接
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-2" title="2-2：使用序列化表的方法实现列转行" class="md-nav__link">
-    2-2：使用序列化表的方法实现列转行
+  <a href="#3-2" title="3-2: 实例演示" class="md-nav__link">
+    3-2: 实例演示
   </a>
   
 </li>
@@ -349,23 +353,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" title="3. 多列转多行" class="md-nav__link">
-    3. 多列转多行
+  <a href="#4-right-outer-join" title="4. Right Outer join (右外连接)" class="md-nav__link">
+    4. Right Outer join (右外连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-1" title="3-1：场景" class="md-nav__link">
-    3-1：场景
+  <a href="#4-1" title="4-1：什么是右外连接" class="md-nav__link">
+    4-1：什么是右外连接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-full-join" title="5. Full join 全连接" class="md-nav__link">
+    5. Full join 全连接
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" title="5-1： 什么是全连接" class="md-nav__link">
+    5-1： 什么是全连接
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-2union-all" title="3-2：使用union all 多列转多行的实例" class="md-nav__link">
-    3-2：使用union all 多列转多行的实例
+  <a href="#5-2full-join" title="5-2：Full join 带来的问题" class="md-nav__link">
+    5-2：Full join 带来的问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3-union-all" title="5-3： union all合并解决问题" class="md-nav__link">
+    5-3： union all合并解决问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6cross-join" title="6.Cross Join(交叉连接)" class="md-nav__link">
+    6.Cross Join(交叉连接)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1" title="6-1：什么交叉连接" class="md-nav__link">
+    6-1：什么交叉连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2" title="6-2：交叉连接实现" class="md-nav__link">
+    6-2：交叉连接实现
   </a>
   
 </li>
@@ -385,16 +443,45 @@
     
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="../delete_data_by_id/" title="利用主键删除重复数据的SQL技巧" class="md-nav__link">
+    <a href="../two/" title="与join相关的SQL技巧" class="md-nav__link">
+      与join相关的SQL技巧
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tree/" title="行列相互转化的SQL技巧" class="md-nav__link">
+      行列相互转化的SQL技巧
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../four/" title="利用主键删除重复数据的SQL技巧" class="md-nav__link">
       利用主键删除重复数据的SQL技巧
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -403,10 +490,46 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../performance-optimization/" title="优化" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
       优化
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        优化
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../yh-1/" title="优化-1" class="md-nav__link">
+      优化-1
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../yh-2/" title="优化-2" class="md-nav__link">
+      优化-2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -431,23 +554,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" title="1. 行转列的场景" class="md-nav__link">
-    1. 行转列的场景
+  <a href="#1-sqljoin" title="1. SQL标准中Join的类型" class="md-nav__link">
+    1. SQL标准中Join的类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-inner-join" title="2. Inner Join(内连接)" class="md-nav__link">
+    2. Inner Join(内连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-1" title="1-1：使用自连接方式实现行转列" class="md-nav__link">
-    1-1：使用自连接方式实现行转列
+  <a href="#2-1-inner-join" title="2-1: 什么inner join？" class="md-nav__link">
+    2-1: 什么inner join？
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1-2case" title="1-2：使用case语句实现行转列" class="md-nav__link">
-    1-2：使用case语句实现行转列
+  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
+    2-2: 实例演示
   </a>
   
 </li>
@@ -458,23 +588,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" title="2.单列转多行" class="md-nav__link">
-    2.单列转多行
+  <a href="#3-left-outer-join" title="3. Left Outer Join(左外连接)" class="md-nav__link">
+    3. Left Outer Join(左外连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2-1" title="2-1：使用场景" class="md-nav__link">
-    2-1：使用场景
+  <a href="#3-1" title="3-1: 什么左外连接" class="md-nav__link">
+    3-1: 什么左外连接
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-2" title="2-2：使用序列化表的方法实现列转行" class="md-nav__link">
-    2-2：使用序列化表的方法实现列转行
+  <a href="#3-2" title="3-2: 实例演示" class="md-nav__link">
+    3-2: 实例演示
   </a>
   
 </li>
@@ -485,23 +615,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" title="3. 多列转多行" class="md-nav__link">
-    3. 多列转多行
+  <a href="#4-right-outer-join" title="4. Right Outer join (右外连接)" class="md-nav__link">
+    4. Right Outer join (右外连接)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-1" title="3-1：场景" class="md-nav__link">
-    3-1：场景
+  <a href="#4-1" title="4-1：什么是右外连接" class="md-nav__link">
+    4-1：什么是右外连接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-full-join" title="5. Full join 全连接" class="md-nav__link">
+    5. Full join 全连接
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" title="5-1： 什么是全连接" class="md-nav__link">
+    5-1： 什么是全连接
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-2union-all" title="3-2：使用union all 多列转多行的实例" class="md-nav__link">
-    3-2：使用union all 多列转多行的实例
+  <a href="#5-2full-join" title="5-2：Full join 带来的问题" class="md-nav__link">
+    5-2：Full join 带来的问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3-union-all" title="5-3： union all合并解决问题" class="md-nav__link">
+    5-3： union all合并解决问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6cross-join" title="6.Cross Join(交叉连接)" class="md-nav__link">
+    6.Cross Join(交叉连接)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1" title="6-1：什么交叉连接" class="md-nav__link">
+    6-1：什么交叉连接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2" title="6-2：交叉连接实现" class="md-nav__link">
+    6-2：交叉连接实现
   </a>
   
 </li>
@@ -527,217 +711,53 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/h_and_l_zh.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/one.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="sql">行和列互转的SQL技巧<a class="headerlink" href="#sql" title="Permanent link">#</a></h1>
-<h2 id="1">1. 行转列的场景<a class="headerlink" href="#1" title="Permanent link">#</a></h2>
-<p><img alt="行转列的场景" src="../行转列的场景.png" /></p>
-<h3 id="1-1">1-1：使用自连接方式实现行转列<a class="headerlink" href="#1-1" title="Permanent link">#</a></h3>
-<p><img alt="行转列的实例" src="../行转列的实例.png" /></p>
-<p>user1 表结构：</p>
-<div class="code"><pre><span></span>mysql&gt; select * from user1;
-+----+-----------+--------------+
-| id | user_name | over         |
-+----+-----------+--------------+
-|  1 | 唐僧      | 功德佛       |
-|  2 | 孙悟空    | 净坛使者     |
-|  3 | 猪八戒    | 斗战圣佛     |
-|  4 | 沙僧      | 金身罗汉     |
-+----+-----------+--------------+
-4 rows in set (0.00 sec)
+                <h1 id="join">正确使用join从句<a class="headerlink" href="#join" title="Permanent link">#</a></h1>
+<h2 id="1-sqljoin">1. SQL标准中Join的类型<a class="headerlink" href="#1-sqljoin" title="Permanent link">#</a></h2>
+<p><img alt="sql中join类型" src="../img/sql中join类型.png" /></p>
+<h2 id="2-inner-join">2. Inner Join(内连接)<a class="headerlink" href="#2-inner-join" title="Permanent link">#</a></h2>
+<h3 id="2-1-inner-join">2-1: 什么inner join？<a class="headerlink" href="#2-1-inner-join" title="Permanent link">#</a></h3>
+<p><img alt="inner-join" src="../img/inner-join.png" /></p>
+<h3 id="2-2">2-2: 实例演示<a class="headerlink" href="#2-2" title="Permanent link">#</a></h3>
+<div class="code"><pre><span></span>select a.user_name, a.over, b.over from user1 a
+inner join user2 b on a.user_name = b.user_name;
 </pre></div>
 
 
-<p>kills表结构：</p>
-<div class="code"><pre><span></span>mysql&gt; select * from kills;
-+----+---------+-------+
-| id | user_id | kills |
-+----+---------+-------+
-|  1 |       2 |    12 |
-|  2 |       2 |    23 |
-|  3 |       1 |     9 |
-|  4 |       3 |    22 |
-|  5 |       2 |    44 |
-|  6 |       3 |    33 |
-|  7 |       1 |    11 |
-|  8 |       1 |    44 |
-|  9 |       1 |    55 |
-| 10 |       4 |     2 |
-+----+---------+-------+
-10 rows in set (0.00 sec)
+<h2 id="3-left-outer-join">3. Left Outer Join(左外连接)<a class="headerlink" href="#3-left-outer-join" title="Permanent link">#</a></h2>
+<h3 id="3-1">3-1: 什么左外连接<a class="headerlink" href="#3-1" title="Permanent link">#</a></h3>
+<p><img alt="左外连接" src="../img/左外连接.png" /></p>
+<h3 id="3-2">3-2: 实例演示<a class="headerlink" href="#3-2" title="Permanent link">#</a></h3>
+<div class="code"><pre><span></span># 查询出user1表中的信息，如果user2在user1中没有，以NULL的显示。
+
+select a.user_name, a.over, b.over from user1 a
+left join user2 b on a.user_name = b.user_name;
+
+
+# 查询出user1表的信息，以及user2在user1中有的
+select a.user_name, a.over, b.over from user1 a
+left join user2 b on a.user_name = b.user_name
+where b.user_name IS NOT NULL;
 </pre></div>
 
 
-<p>将user1 和 kills进行内连接并分组</p>
-<div class="code"><pre><span></span>mysql&gt; select a.user_name, sum(k.kills) from user1 a join kills k on  a.id=k.user_id group by a.user_name;
-+-----------+--------------+
-| user_name | sum(k.kills) |
-+-----------+--------------+
-| 唐僧      |          119 |
-| 孙悟空    |           79 |
-| 沙僧      |            2 |
-| 猪八戒    |           55 |
-+-----------+--------------+
-4 rows in set (0.00 sec)
-</pre></div>
-
-
-<p>使用交叉连接实现行转列</p>
-<div class="code"><pre><span></span>select * from
-
-(select sum(k.kills) as &#39;猪八戒&#39; from user1 a inner join kills k on a.id=k.user_id and a.user_name=&#39;猪八戒&#39;) a
-
-cross join
-
-(select sum(k.kills) as &#39;唐僧&#39; from user1 a inner join kills k on a.id = k.user_id and a.user_name=&#39;唐僧&#39;) b
-
-cross join
-
-(select sum(k.kills) as &#39;沙僧&#39; from user1 a inner join kills k on a.id = k.user_id and a.user_name=&#39;沙僧&#39;) c
-
-cross join
-
-(select sum(k.kills) as &#39;孙悟空&#39; from user1 a inner join kills k on a.id = k.user_id and a.user_name=&#39;孙悟空&#39;) d;
-
-+-----------+--------+--------+-----------+
-| 猪八戒    | 唐僧   | 沙僧   | 孙悟空    |
-+-----------+--------+--------+-----------+
-|        55 |    119 |      2 |        79 |
-+-----------+--------+--------+-----------+
-1 row in set (0.00 sec)
-</pre></div>
-
-
-<h3 id="1-2case">1-2：使用case语句实现行转列<a class="headerlink" href="#1-2case" title="Permanent link">#</a></h3>
-<div class="code"><pre><span></span>select
-sum(case when user_name=&#39;孙悟空&#39; then kills end) as &#39;孙悟空&#39;,
-sum(case when user_name=&#39;孙悟空&#39; then kills end) as &#39;孙悟空&#39;,
-sum(case when user_name=&#39;孙悟空&#39; then kills end) as &#39;孙悟空&#39;,
-sum(case when user_name=&#39;孙悟空&#39; then kills end) as &#39;孙悟空&#39;
-from user1 a join kills k on a.id=k.user_id;
-
-+-----------+-----------+-----------+-----------+
-| 孙悟空    | 孙悟空    | 孙悟空    | 孙悟空    |
-+-----------+-----------+-----------+-----------+
-|        79 |        79 |        79 |        79 |
-+-----------+-----------+-----------+-----------+
-1 row in set (0.00 sec)
-</pre></div>
-
-
-<h2 id="2">2.单列转多行<a class="headerlink" href="#2" title="Permanent link">#</a></h2>
-<h3 id="2-1">2-1：使用场景<a class="headerlink" href="#2-1" title="Permanent link">#</a></h3>
-<p><img alt="单列转多行" src="../单列转多行.png" /></p>
-<h3 id="2-2">2-2：使用序列化表的方法实现列转行<a class="headerlink" href="#2-2" title="Permanent link">#</a></h3>
-<p><img alt="对user1表进行修改" src="../对user1表进行修改.png" /></p>
-<p>将user1中的数据的mobile列进行转行</p>
-<ul>
-<li>第一步：创建一个序列化表：</li>
-</ul>
-<div class="code"><pre><span></span>mysql&gt; create table  tb_sequence(id int primary key auto_increment not null);
-Query OK, 0 rows affected (0.01 sec)
-
-mysql&gt; insert into tb_sequence values(),(),(),(),(),(),(),(),();
-Query OK, 9 rows affected (0.00 sec)
-Records: 9  Duplicates: 0  Warnings: 0
-
-mysql&gt; select * from tb_sequence;
-+----+
-| id |
-+----+
-|  1 |
-|  2 |
-|  3 |
-|  4 |
-|  5 |
-|  6 |
-|  7 |
-|  8 |
-|  9 |
-+----+
-</pre></div>
-
-
-<ul>
-<li>第二步：利用序列化表将列转为多行</li>
-</ul>
-<div class="code"><pre><span></span>select
-user_name,
-replace(substring(substring_index(mobile,&#39;,&#39;, a.id), char_length(substring_index(mobile, &#39;,&#39;, a.id -1))+1), &#39;,&#39;, &#39;&#39;) as mobile
-
-from tb_sequence a
-cross join
-(
-  select user_name,
-  concat(mobile, &#39;,&#39;) as mobile,
-  length(mobile) - length(replace(mobile, &#39;,&#39;,&#39;&#39;))+1 size
-  from user1 b
-) b
-
-on a.id &lt;=b.size;
-
-
-+-----------+-------------+
-| user_name | mobile      |
-+-----------+-------------+
-| 唐僧      | 12345678901 |
-| 唐僧      | 12344444444 |
-| 唐僧      | 12355555555 |
-| 孙悟空    | 12345678901 |
-| 孙悟空    | 12344444444 |
-| 孙悟空    |             |
-| 猪八戒    | 12345678901 |
-| 猪八戒    |             |
-| 沙僧      | 12345678901 |
-| 沙僧      | 12344444444 |
-| 沙僧      | 12355555555 |
-+-----------+-------------+
-11 rows in set (0.00 sec)
-</pre></div>
-
-
-<h2 id="3">3. 多列转多行<a class="headerlink" href="#3" title="Permanent link">#</a></h2>
-<h3 id="3-1">3-1：场景<a class="headerlink" href="#3-1" title="Permanent link">#</a></h3>
-<p><img alt="多列转多行场景" src="../多列转多行场景.png" /></p>
-<h3 id="3-2union-all">3-2：使用union all 多列转多行的实例<a class="headerlink" href="#3-2union-all" title="Permanent link">#</a></h3>
-<p><img alt="equipment表结构" src="../equipment表结构.png" /></p>
-<div class="code"><pre><span></span>select user_name, &#39;arms&#39; as equipment, arms from user1 a
-
-join equipment b on a.id = b.user_id
-
-union all
-
-select user_name, &#39;clothing&#39; as equipment, arms from user1 a
-
-join equipment b on a.id = b.user_id
-
-union all
-
-select user_name, &#39;shoe&#39; as equipment, arms from user1 a
-
-join equipment b on a.id = b.user_id
-
-order by user_name;
-
-+-----------+-----------+--------------+
-| user_name | equipment | arms         |
-+-----------+-----------+--------------+
-| 唐僧      | shoe      | 九环锡杖     |
-| 唐僧      | clothing  | 九环锡杖     |
-| 唐僧      | arms      | 九环锡杖     |
-| 孙悟空    | clothing  | 九池钉靶     |
-| 孙悟空    | arms      | 九池钉靶     |
-| 孙悟空    | shoe      | 九池钉靶     |
-| 沙僧      | shoe      | 降妖报账     |
-| 沙僧      | clothing  | 降妖报账     |
-| 沙僧      | arms      | 降妖报账     |
-| 猪八戒    | shoe      | 紧箍咒       |
-| 猪八戒    | clothing  | 紧箍咒       |
-| 猪八戒    | arms      | 紧箍咒       |
-+-----------+-----------+--------------+
-12 rows in set (0.00 sec)
-</pre></div>
+<h2 id="4-right-outer-join">4. Right Outer join (右外连接)<a class="headerlink" href="#4-right-outer-join" title="Permanent link">#</a></h2>
+<h3 id="4-1">4-1：什么是右外连接<a class="headerlink" href="#4-1" title="Permanent link">#</a></h3>
+<p><img alt="右外连接" src="../img/右外连接.png" /></p>
+<h2 id="5-full-join">5. Full join 全连接<a class="headerlink" href="#5-full-join" title="Permanent link">#</a></h2>
+<h3 id="5-1">5-1： 什么是全连接<a class="headerlink" href="#5-1" title="Permanent link">#</a></h3>
+<p><img alt="全连接" src="../img/全连接.png" /></p>
+<h3 id="5-2full-join">5-2：Full join 带来的问题<a class="headerlink" href="#5-2full-join" title="Permanent link">#</a></h3>
+<p><img alt="full-join带来的问题" src="../img/full-join带来的问题.png" /></p>
+<h3 id="5-3-union-all">5-3： union all合并解决问题<a class="headerlink" href="#5-3-union-all" title="Permanent link">#</a></h3>
+<p><img alt="union-all实现全连接" src="../img/union-all实现全连接.png" /></p>
+<h2 id="6cross-join">6.Cross Join(交叉连接)<a class="headerlink" href="#6cross-join" title="Permanent link">#</a></h2>
+<h3 id="6-1">6-1：什么交叉连接<a class="headerlink" href="#6-1" title="Permanent link">#</a></h3>
+<p><img alt="交叉连接" src="../img/交叉连接.png" /></p>
+<h3 id="6-2">6-2：交叉连接实现<a class="headerlink" href="#6-2" title="Permanent link">#</a></h3>
+<p><img alt="交叉连接实现" src="../img/交叉连接实现.png" /></p>
                 
                   
                 
@@ -758,7 +778,7 @@ order by user_name;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../sql-join-jq/" title="与join相关的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="首页" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -767,19 +787,19 @@ order by user_name;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                与join相关的SQL技巧
+                首页
               </span>
             </div>
           </a>
         
         
-          <a href="../delete_data_by_id/" title="利用主键删除重复数据的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../two/" title="与join相关的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                利用主键删除重复数据的SQL技巧
+                与join相关的SQL技巧
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

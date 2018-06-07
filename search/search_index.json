@@ -11,229 +11,229 @@
             "title": "mysql \u5f00\u53d1\u5b9e\u6218\u6280\u5de7"
         },
         {
-            "location": "/sports-acrobatics/",
+            "location": "/one/",
             "text": "\u6b63\u786e\u4f7f\u7528join\u4ece\u53e5\n#\n\n\n1. SQL\u6807\u51c6\u4e2dJoin\u7684\u7c7b\u578b\n#\n\n\n\n\n2. Inner Join(\u5185\u8fde\u63a5)\n#\n\n\n2-1: \u4ec0\u4e48inner join\uff1f\n#\n\n\n\n\n2-2: \u5b9e\u4f8b\u6f14\u793a\n#\n\n\nselect a.user_name, a.over, b.over from user1 a\ninner join user2 b on a.user_name = b.user_name;\n\n\n\n\n\n3. Left Outer Join(\u5de6\u5916\u8fde\u63a5)\n#\n\n\n3-1: \u4ec0\u4e48\u5de6\u5916\u8fde\u63a5\n#\n\n\n\n\n3-2: \u5b9e\u4f8b\u6f14\u793a\n#\n\n\n# \u67e5\u8be2\u51fauser1\u8868\u4e2d\u7684\u4fe1\u606f\uff0c\u5982\u679cuser2\u5728user1\u4e2d\u6ca1\u6709\uff0c\u4ee5NULL\u7684\u663e\u793a\u3002\n\nselect a.user_name, a.over, b.over from user1 a\nleft join user2 b on a.user_name = b.user_name;\n\n\n# \u67e5\u8be2\u51fauser1\u8868\u7684\u4fe1\u606f\uff0c\u4ee5\u53causer2\u5728user1\u4e2d\u6709\u7684\nselect a.user_name, a.over, b.over from user1 a\nleft join user2 b on a.user_name = b.user_name\nwhere b.user_name IS NOT NULL;\n\n\n\n\n\n4. Right Outer join (\u53f3\u5916\u8fde\u63a5)\n#\n\n\n4-1\uff1a\u4ec0\u4e48\u662f\u53f3\u5916\u8fde\u63a5\n#\n\n\n\n\n5. Full join \u5168\u8fde\u63a5\n#\n\n\n5-1\uff1a \u4ec0\u4e48\u662f\u5168\u8fde\u63a5\n#\n\n\n\n\n5-2\uff1aFull join \u5e26\u6765\u7684\u95ee\u9898\n#\n\n\n\n\n5-3\uff1a union all\u5408\u5e76\u89e3\u51b3\u95ee\u9898\n#\n\n\n\n\n6.Cross Join(\u4ea4\u53c9\u8fde\u63a5)\n#\n\n\n6-1\uff1a\u4ec0\u4e48\u4ea4\u53c9\u8fde\u63a5\n#\n\n\n\n\n6-2\uff1a\u4ea4\u53c9\u8fde\u63a5\u5b9e\u73b0\n#",
             "title": "\u6b63\u786e\u4f7f\u7528join\u4ece\u53e5"
         },
         {
-            "location": "/sports-acrobatics/#join",
+            "location": "/one/#join",
             "text": "",
             "title": "\u6b63\u786e\u4f7f\u7528join\u4ece\u53e5"
         },
         {
-            "location": "/sports-acrobatics/#1-sqljoin",
+            "location": "/one/#1-sqljoin",
             "text": "",
             "title": "1. SQL\u6807\u51c6\u4e2dJoin\u7684\u7c7b\u578b"
         },
         {
-            "location": "/sports-acrobatics/#2-inner-join",
+            "location": "/one/#2-inner-join",
             "text": "",
             "title": "2. Inner Join(\u5185\u8fde\u63a5)"
         },
         {
-            "location": "/sports-acrobatics/#2-1-inner-join",
+            "location": "/one/#2-1-inner-join",
             "text": "",
             "title": "2-1: \u4ec0\u4e48inner join\uff1f"
         },
         {
-            "location": "/sports-acrobatics/#2-2",
+            "location": "/one/#2-2",
             "text": "select a.user_name, a.over, b.over from user1 a\ninner join user2 b on a.user_name = b.user_name;",
             "title": "2-2: \u5b9e\u4f8b\u6f14\u793a"
         },
         {
-            "location": "/sports-acrobatics/#3-left-outer-join",
+            "location": "/one/#3-left-outer-join",
             "text": "",
             "title": "3. Left Outer Join(\u5de6\u5916\u8fde\u63a5)"
         },
         {
-            "location": "/sports-acrobatics/#3-1",
+            "location": "/one/#3-1",
             "text": "",
             "title": "3-1: \u4ec0\u4e48\u5de6\u5916\u8fde\u63a5"
         },
         {
-            "location": "/sports-acrobatics/#3-2",
+            "location": "/one/#3-2",
             "text": "# \u67e5\u8be2\u51fauser1\u8868\u4e2d\u7684\u4fe1\u606f\uff0c\u5982\u679cuser2\u5728user1\u4e2d\u6ca1\u6709\uff0c\u4ee5NULL\u7684\u663e\u793a\u3002\n\nselect a.user_name, a.over, b.over from user1 a\nleft join user2 b on a.user_name = b.user_name;\n\n\n# \u67e5\u8be2\u51fauser1\u8868\u7684\u4fe1\u606f\uff0c\u4ee5\u53causer2\u5728user1\u4e2d\u6709\u7684\nselect a.user_name, a.over, b.over from user1 a\nleft join user2 b on a.user_name = b.user_name\nwhere b.user_name IS NOT NULL;",
             "title": "3-2: \u5b9e\u4f8b\u6f14\u793a"
         },
         {
-            "location": "/sports-acrobatics/#4-right-outer-join",
+            "location": "/one/#4-right-outer-join",
             "text": "",
             "title": "4. Right Outer join (\u53f3\u5916\u8fde\u63a5)"
         },
         {
-            "location": "/sports-acrobatics/#4-1",
+            "location": "/one/#4-1",
             "text": "",
             "title": "4-1\uff1a\u4ec0\u4e48\u662f\u53f3\u5916\u8fde\u63a5"
         },
         {
-            "location": "/sports-acrobatics/#5-full-join",
+            "location": "/one/#5-full-join",
             "text": "",
             "title": "5. Full join \u5168\u8fde\u63a5"
         },
         {
-            "location": "/sports-acrobatics/#5-1",
+            "location": "/one/#5-1",
             "text": "",
             "title": "5-1\uff1a \u4ec0\u4e48\u662f\u5168\u8fde\u63a5"
         },
         {
-            "location": "/sports-acrobatics/#5-2full-join",
+            "location": "/one/#5-2full-join",
             "text": "",
             "title": "5-2\uff1aFull join \u5e26\u6765\u7684\u95ee\u9898"
         },
         {
-            "location": "/sports-acrobatics/#5-3-union-all",
+            "location": "/one/#5-3-union-all",
             "text": "",
             "title": "5-3\uff1a union all\u5408\u5e76\u89e3\u51b3\u95ee\u9898"
         },
         {
-            "location": "/sports-acrobatics/#6cross-join",
+            "location": "/one/#6cross-join",
             "text": "",
             "title": "6.Cross Join(\u4ea4\u53c9\u8fde\u63a5)"
         },
         {
-            "location": "/sports-acrobatics/#6-1",
+            "location": "/one/#6-1",
             "text": "",
             "title": "6-1\uff1a\u4ec0\u4e48\u4ea4\u53c9\u8fde\u63a5"
         },
         {
-            "location": "/sports-acrobatics/#6-2",
+            "location": "/one/#6-2",
             "text": "",
             "title": "6-2\uff1a\u4ea4\u53c9\u8fde\u63a5\u5b9e\u73b0"
         },
         {
-            "location": "/sql-join-jq/",
+            "location": "/two/",
             "text": "\u4f7f\u7528join\u66f4\u65b0\u8868\n#\n\n\n1. \u4f7f\u7528join\u66f4\u65b0\u8868\n#\n\n\nuser1\u8868\uff1a\n\n\n   \n\n\nuser2\u8868\n\n\n\n\n1-1\uff1a \u6f14\u793a\n#\n\n\n\n\n\u9700\u6c42\uff1a\u66f4\u65b0user1\u8868\u4e2d\uff0cuser_name \u5728user1\u8868\u4e2d\u548cuser2\u8868\u4e2d\u540c\u65f6\u5b58\u5728\u7684over\u5b57\u6bb5\n\n\n\u5b9e\u73b0\u601d\u8def\uff1a\n\n\n\n\n\u5185\u8fde\u63a5\u67e5\u8be2user1\u548cuser2\u8868\u4e2duser_name \u76f8\u540c\u7684\u6570\u636e\n\n\n\u4f7f\u7528join \u5c06 \u6b65\u9aa41 \u67e5\u8be2\u7684\u6570\u636e\uff0c\u8fdb\u884c\u5185\u8fde\u63a5\uff0c\u6765\u66f4\u65b0user1\u8868\u3002\n\n\n\n\n\n\nupdate user1 a join (select b.user_name from user1 a join user2 b  \n\non a.user_name=b.user_name) b on a.user_name=b.user_name set\n\na.over='\u5bb6';\n\n\n\n\n\n2. \u4f7f\u7528join\u4f18\u5316\u5b50\u67e5\u8be2\n#\n\n\n2-1\uff1a\u5b9e\u4f8b\n#\n\n\n\n\n3. \u4f7f\u7528join\u4f18\u5316\u5b50\u805a\u5408\u5b50\u67e5\u8be2\n#\n\n\n3-1\uff1a\u5b9e\u4f8b\u8bf4\u660e\n#\n\n\n\n\n4. \u4f7f\u7528join\u5b9e\u73b0\u5206\u7ec4\u9009\u62e9\u6570\u636e\n#\n\n\nuser1\u8868\n\n\n\n\nkills\u8868\n\n\n\n\n\n\n\u9700\u6c42\uff1a\n\n\n\u7ed3\u5408user1\u548ckills\u8868\uff0c\u67e5\u8be2user1\u8868\u4e2d\u7684user_name ,\n\n\n\u5728kills\u8868\u4e2d\u5bf9\u5e94\u7684kills\u6570\u91cf\u6392\u884c\u524d\u4e24\u540d\u7684\u6570\u636e\u663e\u793a\u51fa\u6765\n\n\n\n\nmysql> select d.user_name, c.kills from\n\n(select user_id, kills, (select count(*) from kills b where\n\nb.user_id=a.user_id and a.kills <= b.kills) as count from kills a  \n\ngroup by user_id, kills) c\n\njoin user1 d on c.user_id=d.id where count<=2;\n\n+-----------+-------+\n| user_name | kills |\n+-----------+-------+\n| Tom       |    55 |\n| Tom       |    44 |\n| jack      |    44 |\n| jack      |    23 |\n| cc        |    33 |\n| cc        |    22 |\n| fly       |     2 |\n+-----------+-------+\n7 rows in set (0.00 sec)",
             "title": "\u4e0ejoin\u76f8\u5173\u7684SQL\u6280\u5de7"
         },
         {
-            "location": "/sql-join-jq/#join",
+            "location": "/two/#join",
             "text": "",
             "title": "\u4f7f\u7528join\u66f4\u65b0\u8868"
         },
         {
-            "location": "/sql-join-jq/#1-join",
+            "location": "/two/#1-join",
             "text": "user1\u8868\uff1a       user2\u8868",
             "title": "1. \u4f7f\u7528join\u66f4\u65b0\u8868"
         },
         {
-            "location": "/sql-join-jq/#1-1",
+            "location": "/two/#1-1",
             "text": "\u9700\u6c42\uff1a\u66f4\u65b0user1\u8868\u4e2d\uff0cuser_name \u5728user1\u8868\u4e2d\u548cuser2\u8868\u4e2d\u540c\u65f6\u5b58\u5728\u7684over\u5b57\u6bb5  \u5b9e\u73b0\u601d\u8def\uff1a   \u5185\u8fde\u63a5\u67e5\u8be2user1\u548cuser2\u8868\u4e2duser_name \u76f8\u540c\u7684\u6570\u636e  \u4f7f\u7528join \u5c06 \u6b65\u9aa41 \u67e5\u8be2\u7684\u6570\u636e\uff0c\u8fdb\u884c\u5185\u8fde\u63a5\uff0c\u6765\u66f4\u65b0user1\u8868\u3002    update user1 a join (select b.user_name from user1 a join user2 b  \n\non a.user_name=b.user_name) b on a.user_name=b.user_name set\n\na.over='\u5bb6';",
             "title": "1-1\uff1a \u6f14\u793a"
         },
         {
-            "location": "/sql-join-jq/#2-join",
+            "location": "/two/#2-join",
             "text": "",
             "title": "2. \u4f7f\u7528join\u4f18\u5316\u5b50\u67e5\u8be2"
         },
         {
-            "location": "/sql-join-jq/#2-1",
+            "location": "/two/#2-1",
             "text": "",
             "title": "2-1\uff1a\u5b9e\u4f8b"
         },
         {
-            "location": "/sql-join-jq/#3-join",
+            "location": "/two/#3-join",
             "text": "",
             "title": "3. \u4f7f\u7528join\u4f18\u5316\u5b50\u805a\u5408\u5b50\u67e5\u8be2"
         },
         {
-            "location": "/sql-join-jq/#3-1",
+            "location": "/two/#3-1",
             "text": "",
             "title": "3-1\uff1a\u5b9e\u4f8b\u8bf4\u660e"
         },
         {
-            "location": "/sql-join-jq/#4-join",
+            "location": "/two/#4-join",
             "text": "user1\u8868   kills\u8868    \u9700\u6c42\uff1a  \u7ed3\u5408user1\u548ckills\u8868\uff0c\u67e5\u8be2user1\u8868\u4e2d\u7684user_name ,  \u5728kills\u8868\u4e2d\u5bf9\u5e94\u7684kills\u6570\u91cf\u6392\u884c\u524d\u4e24\u540d\u7684\u6570\u636e\u663e\u793a\u51fa\u6765   mysql> select d.user_name, c.kills from\n\n(select user_id, kills, (select count(*) from kills b where\n\nb.user_id=a.user_id and a.kills <= b.kills) as count from kills a  \n\ngroup by user_id, kills) c\n\njoin user1 d on c.user_id=d.id where count<=2;\n\n+-----------+-------+\n| user_name | kills |\n+-----------+-------+\n| Tom       |    55 |\n| Tom       |    44 |\n| jack      |    44 |\n| jack      |    23 |\n| cc        |    33 |\n| cc        |    22 |\n| fly       |     2 |\n+-----------+-------+\n7 rows in set (0.00 sec)",
             "title": "4. \u4f7f\u7528join\u5b9e\u73b0\u5206\u7ec4\u9009\u62e9\u6570\u636e"
         },
         {
-            "location": "/h_and_l_zh/",
+            "location": "/tree/",
             "text": "\u884c\u548c\u5217\u4e92\u8f6c\u7684SQL\u6280\u5de7\n#\n\n\n1. \u884c\u8f6c\u5217\u7684\u573a\u666f\n#\n\n\n\n\n1-1\uff1a\u4f7f\u7528\u81ea\u8fde\u63a5\u65b9\u5f0f\u5b9e\u73b0\u884c\u8f6c\u5217\n#\n\n\n\n\nuser1 \u8868\u7ed3\u6784\uff1a\n\n\nmysql> select * from user1;\n+----+-----------+--------------+\n| id | user_name | over         |\n+----+-----------+--------------+\n|  1 | \u5510\u50e7      | \u529f\u5fb7\u4f5b       |\n|  2 | \u5b59\u609f\u7a7a    | \u51c0\u575b\u4f7f\u8005     |\n|  3 | \u732a\u516b\u6212    | \u6597\u6218\u5723\u4f5b     |\n|  4 | \u6c99\u50e7      | \u91d1\u8eab\u7f57\u6c49     |\n+----+-----------+--------------+\n4 rows in set (0.00 sec)\n\n\n\n\n\nkills\u8868\u7ed3\u6784\uff1a\n\n\nmysql> select * from kills;\n+----+---------+-------+\n| id | user_id | kills |\n+----+---------+-------+\n|  1 |       2 |    12 |\n|  2 |       2 |    23 |\n|  3 |       1 |     9 |\n|  4 |       3 |    22 |\n|  5 |       2 |    44 |\n|  6 |       3 |    33 |\n|  7 |       1 |    11 |\n|  8 |       1 |    44 |\n|  9 |       1 |    55 |\n| 10 |       4 |     2 |\n+----+---------+-------+\n10 rows in set (0.00 sec)\n\n\n\n\n\n\u5c06user1 \u548c kills\u8fdb\u884c\u5185\u8fde\u63a5\u5e76\u5206\u7ec4\n\n\nmysql> select a.user_name, sum(k.kills) from user1 a join kills k on  a.id=k.user_id group by a.user_name;\n+-----------+--------------+\n| user_name | sum(k.kills) |\n+-----------+--------------+\n| \u5510\u50e7      |          119 |\n| \u5b59\u609f\u7a7a    |           79 |\n| \u6c99\u50e7      |            2 |\n| \u732a\u516b\u6212    |           55 |\n+-----------+--------------+\n4 rows in set (0.00 sec)\n\n\n\n\n\n\u4f7f\u7528\u4ea4\u53c9\u8fde\u63a5\u5b9e\u73b0\u884c\u8f6c\u5217\n\n\nselect * from\n\n(select sum(k.kills) as '\u732a\u516b\u6212' from user1 a inner join kills k on a.id=k.user_id and a.user_name='\u732a\u516b\u6212') a\n\ncross join\n\n(select sum(k.kills) as '\u5510\u50e7' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u5510\u50e7') b\n\ncross join\n\n(select sum(k.kills) as '\u6c99\u50e7' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u6c99\u50e7') c\n\ncross join\n\n(select sum(k.kills) as '\u5b59\u609f\u7a7a' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u5b59\u609f\u7a7a') d;\n\n+-----------+--------+--------+-----------+\n| \u732a\u516b\u6212    | \u5510\u50e7   | \u6c99\u50e7   | \u5b59\u609f\u7a7a    |\n+-----------+--------+--------+-----------+\n|        55 |    119 |      2 |        79 |\n+-----------+--------+--------+-----------+\n1 row in set (0.00 sec)\n\n\n\n\n\n1-2\uff1a\u4f7f\u7528case\u8bed\u53e5\u5b9e\u73b0\u884c\u8f6c\u5217\n#\n\n\nselect\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a'\nfrom user1 a join kills k on a.id=k.user_id;\n\n+-----------+-----------+-----------+-----------+\n| \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    |\n+-----------+-----------+-----------+-----------+\n|        79 |        79 |        79 |        79 |\n+-----------+-----------+-----------+-----------+\n1 row in set (0.00 sec)\n\n\n\n\n\n2.\u5355\u5217\u8f6c\u591a\u884c\n#\n\n\n2-1\uff1a\u4f7f\u7528\u573a\u666f\n#\n\n\n\n\n2-2\uff1a\u4f7f\u7528\u5e8f\u5217\u5316\u8868\u7684\u65b9\u6cd5\u5b9e\u73b0\u5217\u8f6c\u884c\n#\n\n\n\n\n\u5c06user1\u4e2d\u7684\u6570\u636e\u7684mobile\u5217\u8fdb\u884c\u8f6c\u884c\n\n\n\n\n\u7b2c\u4e00\u6b65\uff1a\u521b\u5efa\u4e00\u4e2a\u5e8f\u5217\u5316\u8868\uff1a\n\n\n\n\nmysql> create table  tb_sequence(id int primary key auto_increment not null);\nQuery OK, 0 rows affected (0.01 sec)\n\nmysql> insert into tb_sequence values(),(),(),(),(),(),(),(),();\nQuery OK, 9 rows affected (0.00 sec)\nRecords: 9  Duplicates: 0  Warnings: 0\n\nmysql> select * from tb_sequence;\n+----+\n| id |\n+----+\n|  1 |\n|  2 |\n|  3 |\n|  4 |\n|  5 |\n|  6 |\n|  7 |\n|  8 |\n|  9 |\n+----+\n\n\n\n\n\n\n\n\u7b2c\u4e8c\u6b65\uff1a\u5229\u7528\u5e8f\u5217\u5316\u8868\u5c06\u5217\u8f6c\u4e3a\u591a\u884c\n\n\n\n\nselect\nuser_name,\nreplace(substring(substring_index(mobile,',', a.id), char_length(substring_index(mobile, ',', a.id -1))+1), ',', '') as mobile\n\nfrom tb_sequence a\ncross join\n(\n  select user_name,\n  concat(mobile, ',') as mobile,\n  length(mobile) - length(replace(mobile, ',',''))+1 size\n  from user1 b\n) b\n\non a.id <=b.size;\n\n\n+-----------+-------------+\n| user_name | mobile      |\n+-----------+-------------+\n| \u5510\u50e7      | 12345678901 |\n| \u5510\u50e7      | 12344444444 |\n| \u5510\u50e7      | 12355555555 |\n| \u5b59\u609f\u7a7a    | 12345678901 |\n| \u5b59\u609f\u7a7a    | 12344444444 |\n| \u5b59\u609f\u7a7a    |             |\n| \u732a\u516b\u6212    | 12345678901 |\n| \u732a\u516b\u6212    |             |\n| \u6c99\u50e7      | 12345678901 |\n| \u6c99\u50e7      | 12344444444 |\n| \u6c99\u50e7      | 12355555555 |\n+-----------+-------------+\n11 rows in set (0.00 sec)\n\n\n\n\n\n3. \u591a\u5217\u8f6c\u591a\u884c\n#\n\n\n3-1\uff1a\u573a\u666f\n#\n\n\n\n\n3-2\uff1a\u4f7f\u7528union all \u591a\u5217\u8f6c\u591a\u884c\u7684\u5b9e\u4f8b\n#\n\n\n\n\nselect user_name, 'arms' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\nunion all\n\nselect user_name, 'clothing' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\nunion all\n\nselect user_name, 'shoe' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\norder by user_name;\n\n+-----------+-----------+--------------+\n| user_name | equipment | arms         |\n+-----------+-----------+--------------+\n| \u5510\u50e7      | shoe      | \u4e5d\u73af\u9521\u6756     |\n| \u5510\u50e7      | clothing  | \u4e5d\u73af\u9521\u6756     |\n| \u5510\u50e7      | arms      | \u4e5d\u73af\u9521\u6756     |\n| \u5b59\u609f\u7a7a    | clothing  | \u4e5d\u6c60\u9489\u9776     |\n| \u5b59\u609f\u7a7a    | arms      | \u4e5d\u6c60\u9489\u9776     |\n| \u5b59\u609f\u7a7a    | shoe      | \u4e5d\u6c60\u9489\u9776     |\n| \u6c99\u50e7      | shoe      | \u964d\u5996\u62a5\u8d26     |\n| \u6c99\u50e7      | clothing  | \u964d\u5996\u62a5\u8d26     |\n| \u6c99\u50e7      | arms      | \u964d\u5996\u62a5\u8d26     |\n| \u732a\u516b\u6212    | shoe      | \u7d27\u7b8d\u5492       |\n| \u732a\u516b\u6212    | clothing  | \u7d27\u7b8d\u5492       |\n| \u732a\u516b\u6212    | arms      | \u7d27\u7b8d\u5492       |\n+-----------+-----------+--------------+\n12 rows in set (0.00 sec)",
             "title": "\u884c\u5217\u76f8\u4e92\u8f6c\u5316\u7684SQL\u6280\u5de7"
         },
         {
-            "location": "/h_and_l_zh/#sql",
+            "location": "/tree/#sql",
             "text": "",
             "title": "\u884c\u548c\u5217\u4e92\u8f6c\u7684SQL\u6280\u5de7"
         },
         {
-            "location": "/h_and_l_zh/#1",
+            "location": "/tree/#1",
             "text": "",
             "title": "1. \u884c\u8f6c\u5217\u7684\u573a\u666f"
         },
         {
-            "location": "/h_and_l_zh/#1-1",
+            "location": "/tree/#1-1",
             "text": "user1 \u8868\u7ed3\u6784\uff1a  mysql> select * from user1;\n+----+-----------+--------------+\n| id | user_name | over         |\n+----+-----------+--------------+\n|  1 | \u5510\u50e7      | \u529f\u5fb7\u4f5b       |\n|  2 | \u5b59\u609f\u7a7a    | \u51c0\u575b\u4f7f\u8005     |\n|  3 | \u732a\u516b\u6212    | \u6597\u6218\u5723\u4f5b     |\n|  4 | \u6c99\u50e7      | \u91d1\u8eab\u7f57\u6c49     |\n+----+-----------+--------------+\n4 rows in set (0.00 sec)  kills\u8868\u7ed3\u6784\uff1a  mysql> select * from kills;\n+----+---------+-------+\n| id | user_id | kills |\n+----+---------+-------+\n|  1 |       2 |    12 |\n|  2 |       2 |    23 |\n|  3 |       1 |     9 |\n|  4 |       3 |    22 |\n|  5 |       2 |    44 |\n|  6 |       3 |    33 |\n|  7 |       1 |    11 |\n|  8 |       1 |    44 |\n|  9 |       1 |    55 |\n| 10 |       4 |     2 |\n+----+---------+-------+\n10 rows in set (0.00 sec)  \u5c06user1 \u548c kills\u8fdb\u884c\u5185\u8fde\u63a5\u5e76\u5206\u7ec4  mysql> select a.user_name, sum(k.kills) from user1 a join kills k on  a.id=k.user_id group by a.user_name;\n+-----------+--------------+\n| user_name | sum(k.kills) |\n+-----------+--------------+\n| \u5510\u50e7      |          119 |\n| \u5b59\u609f\u7a7a    |           79 |\n| \u6c99\u50e7      |            2 |\n| \u732a\u516b\u6212    |           55 |\n+-----------+--------------+\n4 rows in set (0.00 sec)  \u4f7f\u7528\u4ea4\u53c9\u8fde\u63a5\u5b9e\u73b0\u884c\u8f6c\u5217  select * from\n\n(select sum(k.kills) as '\u732a\u516b\u6212' from user1 a inner join kills k on a.id=k.user_id and a.user_name='\u732a\u516b\u6212') a\n\ncross join\n\n(select sum(k.kills) as '\u5510\u50e7' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u5510\u50e7') b\n\ncross join\n\n(select sum(k.kills) as '\u6c99\u50e7' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u6c99\u50e7') c\n\ncross join\n\n(select sum(k.kills) as '\u5b59\u609f\u7a7a' from user1 a inner join kills k on a.id = k.user_id and a.user_name='\u5b59\u609f\u7a7a') d;\n\n+-----------+--------+--------+-----------+\n| \u732a\u516b\u6212    | \u5510\u50e7   | \u6c99\u50e7   | \u5b59\u609f\u7a7a    |\n+-----------+--------+--------+-----------+\n|        55 |    119 |      2 |        79 |\n+-----------+--------+--------+-----------+\n1 row in set (0.00 sec)",
             "title": "1-1\uff1a\u4f7f\u7528\u81ea\u8fde\u63a5\u65b9\u5f0f\u5b9e\u73b0\u884c\u8f6c\u5217"
         },
         {
-            "location": "/h_and_l_zh/#1-2case",
+            "location": "/tree/#1-2case",
             "text": "select\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a',\nsum(case when user_name='\u5b59\u609f\u7a7a' then kills end) as '\u5b59\u609f\u7a7a'\nfrom user1 a join kills k on a.id=k.user_id;\n\n+-----------+-----------+-----------+-----------+\n| \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    | \u5b59\u609f\u7a7a    |\n+-----------+-----------+-----------+-----------+\n|        79 |        79 |        79 |        79 |\n+-----------+-----------+-----------+-----------+\n1 row in set (0.00 sec)",
             "title": "1-2\uff1a\u4f7f\u7528case\u8bed\u53e5\u5b9e\u73b0\u884c\u8f6c\u5217"
         },
         {
-            "location": "/h_and_l_zh/#2",
+            "location": "/tree/#2",
             "text": "",
             "title": "2.\u5355\u5217\u8f6c\u591a\u884c"
         },
         {
-            "location": "/h_and_l_zh/#2-1",
+            "location": "/tree/#2-1",
             "text": "",
             "title": "2-1\uff1a\u4f7f\u7528\u573a\u666f"
         },
         {
-            "location": "/h_and_l_zh/#2-2",
+            "location": "/tree/#2-2",
             "text": "\u5c06user1\u4e2d\u7684\u6570\u636e\u7684mobile\u5217\u8fdb\u884c\u8f6c\u884c   \u7b2c\u4e00\u6b65\uff1a\u521b\u5efa\u4e00\u4e2a\u5e8f\u5217\u5316\u8868\uff1a   mysql> create table  tb_sequence(id int primary key auto_increment not null);\nQuery OK, 0 rows affected (0.01 sec)\n\nmysql> insert into tb_sequence values(),(),(),(),(),(),(),(),();\nQuery OK, 9 rows affected (0.00 sec)\nRecords: 9  Duplicates: 0  Warnings: 0\n\nmysql> select * from tb_sequence;\n+----+\n| id |\n+----+\n|  1 |\n|  2 |\n|  3 |\n|  4 |\n|  5 |\n|  6 |\n|  7 |\n|  8 |\n|  9 |\n+----+   \u7b2c\u4e8c\u6b65\uff1a\u5229\u7528\u5e8f\u5217\u5316\u8868\u5c06\u5217\u8f6c\u4e3a\u591a\u884c   select\nuser_name,\nreplace(substring(substring_index(mobile,',', a.id), char_length(substring_index(mobile, ',', a.id -1))+1), ',', '') as mobile\n\nfrom tb_sequence a\ncross join\n(\n  select user_name,\n  concat(mobile, ',') as mobile,\n  length(mobile) - length(replace(mobile, ',',''))+1 size\n  from user1 b\n) b\n\non a.id <=b.size;\n\n\n+-----------+-------------+\n| user_name | mobile      |\n+-----------+-------------+\n| \u5510\u50e7      | 12345678901 |\n| \u5510\u50e7      | 12344444444 |\n| \u5510\u50e7      | 12355555555 |\n| \u5b59\u609f\u7a7a    | 12345678901 |\n| \u5b59\u609f\u7a7a    | 12344444444 |\n| \u5b59\u609f\u7a7a    |             |\n| \u732a\u516b\u6212    | 12345678901 |\n| \u732a\u516b\u6212    |             |\n| \u6c99\u50e7      | 12345678901 |\n| \u6c99\u50e7      | 12344444444 |\n| \u6c99\u50e7      | 12355555555 |\n+-----------+-------------+\n11 rows in set (0.00 sec)",
             "title": "2-2\uff1a\u4f7f\u7528\u5e8f\u5217\u5316\u8868\u7684\u65b9\u6cd5\u5b9e\u73b0\u5217\u8f6c\u884c"
         },
         {
-            "location": "/h_and_l_zh/#3",
+            "location": "/tree/#3",
             "text": "",
             "title": "3. \u591a\u5217\u8f6c\u591a\u884c"
         },
         {
-            "location": "/h_and_l_zh/#3-1",
+            "location": "/tree/#3-1",
             "text": "",
             "title": "3-1\uff1a\u573a\u666f"
         },
         {
-            "location": "/h_and_l_zh/#3-2union-all",
+            "location": "/tree/#3-2union-all",
             "text": "select user_name, 'arms' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\nunion all\n\nselect user_name, 'clothing' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\nunion all\n\nselect user_name, 'shoe' as equipment, arms from user1 a\n\njoin equipment b on a.id = b.user_id\n\norder by user_name;\n\n+-----------+-----------+--------------+\n| user_name | equipment | arms         |\n+-----------+-----------+--------------+\n| \u5510\u50e7      | shoe      | \u4e5d\u73af\u9521\u6756     |\n| \u5510\u50e7      | clothing  | \u4e5d\u73af\u9521\u6756     |\n| \u5510\u50e7      | arms      | \u4e5d\u73af\u9521\u6756     |\n| \u5b59\u609f\u7a7a    | clothing  | \u4e5d\u6c60\u9489\u9776     |\n| \u5b59\u609f\u7a7a    | arms      | \u4e5d\u6c60\u9489\u9776     |\n| \u5b59\u609f\u7a7a    | shoe      | \u4e5d\u6c60\u9489\u9776     |\n| \u6c99\u50e7      | shoe      | \u964d\u5996\u62a5\u8d26     |\n| \u6c99\u50e7      | clothing  | \u964d\u5996\u62a5\u8d26     |\n| \u6c99\u50e7      | arms      | \u964d\u5996\u62a5\u8d26     |\n| \u732a\u516b\u6212    | shoe      | \u7d27\u7b8d\u5492       |\n| \u732a\u516b\u6212    | clothing  | \u7d27\u7b8d\u5492       |\n| \u732a\u516b\u6212    | arms      | \u7d27\u7b8d\u5492       |\n+-----------+-----------+--------------+\n12 rows in set (0.00 sec)",
             "title": "3-2\uff1a\u4f7f\u7528union all \u591a\u5217\u8f6c\u591a\u884c\u7684\u5b9e\u4f8b"
         },
         {
-            "location": "/delete_data_by_id/",
+            "location": "/four/",
             "text": "\u5229\u7528\u4e3b\u952e\u5220\u9664\u91cd\u590d\u6570\u636e\n#\n\n\n1. \u5220\u9664\u91cd\u590d\u6570\u636e\n#\n\n\n1-1\uff1a\u5220\u9664\u7b56\u7565\n#\n\n\n\n\n1-2\uff1a \u5220\u9664\u5b9e\u73b0\n#\n\n\n\n\n\u5c06\u8868\u4e2d\u7684\u91cd\u590d\u6570\u636e\u5220\u9664\n\n\nmysql> select user_name, count(*), max(id) as id from user_test group by user_name having count(*) > 1;\n+-----------+----------+------+\n| user_name | count(*) | id   |\n+-----------+----------+------+\n| \u5510\u50e7      |        4 |   19 |\n| \u5b59\u609f\u7a7a    |        4 |   20 |\n| \u6c99\u50e7      |        4 |   22 |\n| \u732a\u516b\u6212    |        4 |   21 |\n+-----------+----------+------+\n4 rows in set (0.00 sec)\n\nmysql> delete a from user_test a\n\njoin\n\n(select user_name, count(*), max(id) as id from user_test group by user_name having count(*) > 1)  b\n\non\n\na.user_name = b.user_name where a.id < b.id;\n\nQuery OK, 12 rows affected (0.01 sec)\n\nmysql> select id,user_name,over from user_test;\n+----+-----------+--------------+\n| id | user_name | over         |\n+----+-----------+--------------+\n| 19 | \u5510\u50e7      | \u529f\u5fb7\u4f5b       |\n| 20 | \u5b59\u609f\u7a7a    | \u51c0\u575b\u4f7f\u8005     |\n| 21 | \u732a\u516b\u6212    | \u6597\u6218\u5723\u4f5b     |\n| 22 | \u6c99\u50e7      | \u91d1\u8eab\u7f57\u6c49     |\n+----+-----------+--------------+",
             "title": "\u5229\u7528\u4e3b\u952e\u5220\u9664\u91cd\u590d\u6570\u636e\u7684SQL\u6280\u5de7"
         },
         {
-            "location": "/delete_data_by_id/#_1",
+            "location": "/four/#_1",
             "text": "",
             "title": "\u5229\u7528\u4e3b\u952e\u5220\u9664\u91cd\u590d\u6570\u636e"
         },
         {
-            "location": "/delete_data_by_id/#1",
+            "location": "/four/#1",
             "text": "",
             "title": "1. \u5220\u9664\u91cd\u590d\u6570\u636e"
         },
         {
-            "location": "/delete_data_by_id/#1-1",
+            "location": "/four/#1-1",
             "text": "",
             "title": "1-1\uff1a\u5220\u9664\u7b56\u7565"
         },
         {
-            "location": "/delete_data_by_id/#1-2",
+            "location": "/four/#1-2",
             "text": "\u5c06\u8868\u4e2d\u7684\u91cd\u590d\u6570\u636e\u5220\u9664  mysql> select user_name, count(*), max(id) as id from user_test group by user_name having count(*) > 1;\n+-----------+----------+------+\n| user_name | count(*) | id   |\n+-----------+----------+------+\n| \u5510\u50e7      |        4 |   19 |\n| \u5b59\u609f\u7a7a    |        4 |   20 |\n| \u6c99\u50e7      |        4 |   22 |\n| \u732a\u516b\u6212    |        4 |   21 |\n+-----------+----------+------+\n4 rows in set (0.00 sec)\n\nmysql> delete a from user_test a\n\njoin\n\n(select user_name, count(*), max(id) as id from user_test group by user_name having count(*) > 1)  b\n\non\n\na.user_name = b.user_name where a.id < b.id;\n\nQuery OK, 12 rows affected (0.01 sec)\n\nmysql> select id,user_name,over from user_test;\n+----+-----------+--------------+\n| id | user_name | over         |\n+----+-----------+--------------+\n| 19 | \u5510\u50e7      | \u529f\u5fb7\u4f5b       |\n| 20 | \u5b59\u609f\u7a7a    | \u51c0\u575b\u4f7f\u8005     |\n| 21 | \u732a\u516b\u6212    | \u6597\u6218\u5723\u4f5b     |\n| 22 | \u6c99\u50e7      | \u91d1\u8eab\u7f57\u6c49     |\n+----+-----------+--------------+",
             "title": "1-2\uff1a \u5220\u9664\u5b9e\u73b0"
         },
         {
-            "location": "/performance-optimization/",
-            "text": "\u6027\u80fd\u4f18\u5316\n#",
-            "title": "\u4f18\u5316"
+            "location": "/yh-1/",
+            "text": "",
+            "title": "\u4f18\u5316-1"
         },
         {
-            "location": "/performance-optimization/#_1",
+            "location": "/yh-2/",
             "text": "",
-            "title": "\u6027\u80fd\u4f18\u5316"
+            "title": "\u4f18\u5316-2"
         }
     ]
 }
