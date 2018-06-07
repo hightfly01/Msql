@@ -3,13 +3,13 @@
 
 ## 1. SQL标准中Join的类型
 
-![sql中join类型](../img/sql中join类型.png)
+![sql中join类型](img/sql中join类型.png)
 
 ## 2. Inner Join(内连接)
 
 ### 2-1: 什么inner join？
 
-![inner-join](../img/inner-join.png)
+![inner-join](img/inner-join.png)
 
 ### 2-2: 实例演示
 
@@ -23,7 +23,7 @@ inner join user2 b on a.user_name = b.user_name;
 
 ### 3-1: 什么左外连接
 
-![左外连接](../img/左外连接.png)
+![左外连接](img/左外连接.png)
 
 ###  3-2: 实例演示
 
@@ -47,7 +47,7 @@ where b.user_name IS NOT NULL;
 ### 4-1：什么是右外连接
 
 
-![右外连接](../img/右外连接.png)
+![右外连接](img/右外连接.png)
 
 
 ## 5. Full join 全连接
@@ -55,15 +55,15 @@ where b.user_name IS NOT NULL;
 ### 5-1： 什么是全连接
 
 
-![全连接](../img/全连接.png)
+![全连接](img/全连接.png)
 
 ### 5-2：Full join 带来的问题
 
-![full-join带来的问题](../img/full-join带来的问题.png)
+![full-join带来的问题](img/full-join带来的问题.png)
 
 ### 5-3： union all合并解决问题
 
-![union-all实现全连接](../img/union-all实现全连接.png)
+![union-all实现全连接](img/union-all实现全连接.png)
 
 
 ## 6.Cross Join(交叉连接)
@@ -71,9 +71,9 @@ where b.user_name IS NOT NULL;
 ### 6-1：什么交叉连接
 
 
-![交叉连接](../img/交叉连接.png)
+![交叉连接](img/交叉连接.png)
 
 ### 6-2：交叉连接实现
 
 
-![交叉连接实现](../img/交叉连接实现.png)
+![交叉连接实现](img/交叉连接实现.png)

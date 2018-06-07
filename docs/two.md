@@ -30,7 +30,7 @@ a.over='家';
 
 ### 2-1：实例
 
-![使用join优化子查询](../img/使用join优化子查询.png)
+![使用join优化子查询](img/使用join优化子查询.png)
 
 
 
@@ -38,17 +38,17 @@ a.over='家';
 
 ### 3-1：实例说明
 
-![使用join优化子聚合子查询](../img/使用join优化子聚合子查询.png)
+![使用join优化子聚合子查询](img/使用join优化子聚合子查询.png)
 
 ## 4. 使用join实现分组选择数据
 
 user1表
 
-![user1表](../img/user1表.png)
+![user1表](img/user1表.png)
 
 kills表
 
-![kills表](../img/kills表.png)
+![kills表](img/kills表.png)
 
 
 > 需求：
