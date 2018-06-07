@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,26 +12,38 @@
     
         
     <url>
-     <loc>/one/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/jq/1/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/two/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/jq/2/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/tree/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/jq/3/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/four/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/jq/4/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/jq/5/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/jq/6/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -40,14 +52,44 @@
     
         
     <url>
-     <loc>/yh-1/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/yh/1/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/yh-2/</loc>
-     <lastmod>2018-06-07</lastmod>
+     <loc>/yh/2/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/yh/3/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/yh/4/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/yh/5/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/yh/6/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/yh/7/</loc>
+     <lastmod>2018-06-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

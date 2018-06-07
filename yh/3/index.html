@@ -31,20 +31,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
       
-        <title>利用主键删除重复数据的SQL技巧 - mysql-notebook</title>
+        <title>索引优化 - mysql-notebook</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="mysql-notebook" class="md-header-nav__button md-logo">
+        <a href="../.." title="mysql-notebook" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -115,7 +115,7 @@
                 mysql-notebook
               </span>
               <span class="md-header-nav__topic">
-                利用主键删除重复数据的SQL技巧
+                索引优化
               </span>
             
           
@@ -232,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="首页" class="md-nav__link">
+    <a href="../.." title="首页" class="md-nav__link">
       首页
     </a>
   </li>
@@ -242,12 +242,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       开发技巧
@@ -265,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../one/" title="正确使用join从句" class="md-nav__link">
+    <a href="../../jq/1/" title="正确使用join从句" class="md-nav__link">
       正确使用join从句
     </a>
   </li>
@@ -277,7 +275,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../two/" title="与join相关的SQL技巧" class="md-nav__link">
+    <a href="../../jq/2/" title="与join相关的SQL技巧" class="md-nav__link">
       与join相关的SQL技巧
     </a>
   </li>
@@ -289,7 +287,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tree/" title="行列相互转化的SQL技巧" class="md-nav__link">
+    <a href="../../jq/3/" title="行列相互转化的SQL技巧" class="md-nav__link">
       行列相互转化的SQL技巧
     </a>
   </li>
@@ -299,69 +297,35 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        利用主键删除重复数据的SQL技巧
-      </label>
-    
-    <a href="./" title="利用主键删除重复数据的SQL技巧" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../jq/4/" title="利用主键删除重复数据的SQL技巧" class="md-nav__link">
       利用主键删除重复数据的SQL技巧
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" title="1. 删除重复数据" class="md-nav__link">
-    1. 删除重复数据
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+  </li>
+
         
-          <li class="md-nav__item">
-  <a href="#1-1" title="1-1：删除策略" class="md-nav__link">
-    1-1：删除策略
-  </a>
-  
-</li>
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../jq/5/" title="子查询中实现多列过滤的SQL技巧" class="md-nav__link">
+      子查询中实现多列过滤的SQL技巧
+    </a>
+  </li>
+
         
-          <li class="md-nav__item">
-  <a href="#1-2" title="1-2： 删除实现" class="md-nav__link">
-    1-2： 删除实现
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../jq/6/" title="同一属性的多值过滤的SQL技巧" class="md-nav__link">
+      同一属性的多值过滤的SQL技巧
+    </a>
   </li>
 
         
@@ -374,10 +338,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       性能优化
@@ -395,8 +361,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../yh-1/" title="优化-1" class="md-nav__link">
-      优化-1
+    <a href="../1/" title="影响数据库性能几个方面" class="md-nav__link">
+      影响数据库性能几个方面
     </a>
   </li>
 
@@ -407,8 +373,170 @@
 
 
   <li class="md-nav__item">
-    <a href="../yh-2/" title="优化-2" class="md-nav__link">
-      优化-2
+    <a href="../2/" title="存储引擎" class="md-nav__link">
+      存储引擎
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        索引优化
+      </label>
+    
+    <a href="./" title="索引优化" class="md-nav__link md-nav__link--active">
+      索引优化
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="索引类型" class="md-nav__link">
+    索引类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-b-tree" title="1. B-tree索引" class="md-nav__link">
+    1. B-tree索引
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" title="1.1： 特点" class="md-nav__link">
+    1.1： 特点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-b" title="1.2： 在什么情况下可以用到B树索引" class="md-nav__link">
+    1.2： 在什么情况下可以用到B树索引
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" title="1.3 使用限制" class="md-nav__link">
+    1.3 使用限制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hash" title="2. Hash 索引" class="md-nav__link">
+    2. Hash 索引
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" title="2.1: 特点" class="md-nav__link">
+    2.1: 特点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" title="2.2：限制" class="md-nav__link">
+    2.2：限制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 索引优化" class="md-nav__link">
+    3. 索引优化
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4/" title="SQL查询优化" class="md-nav__link">
+      SQL查询优化
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5/" title="分库分表" class="md-nav__link">
+      分库分表
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6/" title="事务" class="md-nav__link">
+      事务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7/" title="慢查询的开启和分析" class="md-nav__link">
+      慢查询的开启和分析
     </a>
   </li>
 
@@ -432,36 +560,82 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" title="1. 删除重复数据" class="md-nav__link">
-    1. 删除重复数据
+  <a href="#_1" title="索引类型" class="md-nav__link">
+    索引类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-b-tree" title="1. B-tree索引" class="md-nav__link">
+    1. B-tree索引
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-1" title="1-1：删除策略" class="md-nav__link">
-    1-1：删除策略
+  <a href="#11" title="1.1： 特点" class="md-nav__link">
+    1.1： 特点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1-2" title="1-2： 删除实现" class="md-nav__link">
-    1-2： 删除实现
+  <a href="#12-b" title="1.2： 在什么情况下可以用到B树索引" class="md-nav__link">
+    1.2： 在什么情况下可以用到B树索引
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" title="1.3 使用限制" class="md-nav__link">
+    1.3 使用限制
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hash" title="2. Hash 索引" class="md-nav__link">
+    2. Hash 索引
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" title="2.1: 特点" class="md-nav__link">
+    2.1: 特点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" title="2.2：限制" class="md-nav__link">
+    2.2：限制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 索引优化" class="md-nav__link">
+    3. 索引优化
+  </a>
   
 </li>
       
@@ -481,49 +655,135 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/four.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hightfly01/Msql-notebook/edit/master/docs/yh/3.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="_1">利用主键删除重复数据<a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
-<h2 id="1">1. 删除重复数据<a class="headerlink" href="#1" title="Permanent link">#</a></h2>
-<h3 id="1-1">1-1：删除策略<a class="headerlink" href="#1-1" title="Permanent link">#</a></h3>
-<p><img alt="删除策略" src="../删除策略.png" /></p>
-<h3 id="1-2">1-2： 删除实现<a class="headerlink" href="#1-2" title="Permanent link">#</a></h3>
-<p><img alt="查看表结构" src="../查看表结构.png" /></p>
-<p>将表中的重复数据删除</p>
-<div class="code"><pre><span></span>mysql&gt; select user_name, count(*), max(id) as id from user_test group by user_name having count(*) &gt; 1;
-+-----------+----------+------+
-| user_name | count(*) | id   |
-+-----------+----------+------+
-| 唐僧      |        4 |   19 |
-| 孙悟空    |        4 |   20 |
-| 沙僧      |        4 |   22 |
-| 猪八戒    |        4 |   21 |
-+-----------+----------+------+
-4 rows in set (0.00 sec)
-
-mysql&gt; delete a from user_test a
-
-join
-
-(select user_name, count(*), max(id) as id from user_test group by user_name having count(*) &gt; 1)  b
-
-on
-
-a.user_name = b.user_name where a.id &lt; b.id;
-
-Query OK, 12 rows affected (0.01 sec)
-
-mysql&gt; select id,user_name,over from user_test;
-+----+-----------+--------------+
-| id | user_name | over         |
-+----+-----------+--------------+
-| 19 | 唐僧      | 功德佛       |
-| 20 | 孙悟空    | 净坛使者     |
-| 21 | 猪八戒    | 斗战圣佛     |
-| 22 | 沙僧      | 金身罗汉     |
-+----+-----------+--------------+
+                  <h1>索引优化</h1>
+                
+                <h2 id="_1">索引类型<a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
+<h2 id="1-b-tree">1. B-tree索引<a class="headerlink" href="#1-b-tree" title="Permanent link">#</a></h2>
+<h3 id="11">1.1： 特点<a class="headerlink" href="#11" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>以B+树的结构存储数据</p>
+<ul>
+<li>平衡的查找树</li>
+<li>各个叶子节点之间，通过指针进行连接的</li>
+<li>所有的记录节点都是安装键值的大小顺序存放在同一层叶子节点上。</li>
+</ul>
+</li>
+<li>
+<p>b-tree 索引能够加快数据的查询速度</p>
+</li>
+<li>
+<p>b-tree 索引更适合进行范围查找(因为采用顺序结构进行存储的)</p>
+</li>
+</ul>
+<h3 id="12-b">1.2： 在什么情况下可以用到B树索引<a class="headerlink" href="#12-b" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>全值匹配的查询</p>
+<div class="code"><pre><span></span>  比如： order_sn = &#39;34523452345&#39;
 </pre></div>
+
+
+</li>
+<li>
+<p>匹配最左前缀的查询</p>
+</li>
+<li>
+<p>-匹配列前缀查询</p>
+<div class="code"><pre><span></span>  比如： order_sn like &#39;34345%&#39;
+</pre></div>
+
+
+</li>
+<li>
+<p>匹配范围值的查询</p>
+<div class="code"><pre><span></span>  比如： order_sn &gt; &#39;2342143&#39;
+</pre></div>
+
+
+</li>
+<li>
+<p>精确匹配左前列并范围匹配另外一列</p>
+</li>
+<li>
+<p>只访问索引的查询</p>
+</li>
+</ul>
+<h3 id="13">1.3 使用限制<a class="headerlink" href="#13" title="Permanent link">#</a></h3>
+<ul>
+<li>如果不是按照索引最左列开始查找，则无法使用索引</li>
+<li>使用索引时不能跳过索引中的列</li>
+<li>not in 和 &lt;&gt; 操作无法使用索引</li>
+<li>如果查询中有某个列的范围查询，则其右边所有列都无法使用索引</li>
+</ul>
+<h2 id="2-hash">2. Hash 索引<a class="headerlink" href="#2-hash" title="Permanent link">#</a></h2>
+<h3 id="21">2.1: 特点<a class="headerlink" href="#21" title="Permanent link">#</a></h3>
+<ul>
+<li>hash 索引是基于hash表实现，只有查询条件精确匹配hash索引中的所有列时，才能使用hash索引。</li>
+<li>hash索引只能用在等值查询中。</li>
+<li>对于hash索引中的所有列，存储引擎都会为每一行计算一个hash码，hash索引中存储的就是hash码</li>
+</ul>
+<h3 id="22">2.2：限制<a class="headerlink" href="#22" title="Permanent link">#</a></h3>
+<ul>
+<li>hash 索引必须进行二次查询</li>
+<li>hash索引无法用于排序（由于使用hash码存储，不是key-value形式，所以无法排序）</li>
+<li>hash索引不支持部分索引查找，也不支持范围查找</li>
+<li>hash索引中hash码的计算可能存在hash冲突</li>
+</ul>
+<h2 id="3">3. 索引优化<a class="headerlink" href="#3" title="Permanent link">#</a></h2>
+<ul>
+<li>索引列上不能使用表达式或者函数</li>
+</ul>
+<p>优化前：
+<img alt="比如3-1" src="../比如3-1.png" /></p>
+<p>优化后：
+<img alt="优化之后" src="../优化之后.png" /></p>
+<ul>
+<li>对前缀索引和索引列进行选择性的使用<div class="code"><pre><span></span>    在对索引的选择，既要保证索引尽可能的小，同时选择性不能太差。
+</pre></div>
+
+
+</li>
+</ul>
+<p><img alt="比如3-2" src="../比如3-2.png" /></p>
+<ul>
+<li>经常会被使用到的列优先</li>
+<li>选择性高的列优先</li>
+<li>宽度小的列优先</li>
+<li>
+<p>覆盖索引优先</p>
+<div class="code"><pre><span></span>      什么覆盖索引？
+      查询索引列 和 where，group by 等 从句中同时也出现了索引列
+      就成为覆盖索引
+
+      无法使用覆盖索引的情况：
+      查询中使用太多的列
+      使用了双%的like查询
+</pre></div>
+
+
+</li>
+<li>
+<p>使用索引扫描来优化排序</p>
+<div class="code"><pre><span></span>    索引的列顺序和order by 子句的顺序完全一致
+    索引中所有列的方向和order by 子句完全一致
+    order by 中字段全部在关联表中的第一张表中
+</pre></div>
+
+
+</li>
+<li>
+<p>利用索引优化锁</p>
+<div class="code"><pre><span></span>  索引可以减少锁定的行数
+  索引可以加快处理速度，同时也加快了锁的释放
+</pre></div>
+
+
+</li>
+</ul>
                 
                   
                 
@@ -544,7 +804,7 @@ mysql&gt; select id,user_name,over from user_test;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../tree/" title="行列相互转化的SQL技巧" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../2/" title="存储引擎" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -553,19 +813,19 @@ mysql&gt; select id,user_name,over from user_test;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                行列相互转化的SQL技巧
+                存储引擎
               </span>
             </div>
           </a>
         
         
-          <a href="../yh-1/" title="优化-1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../4/" title="SQL查询优化" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                优化-1
+                SQL查询优化
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -599,9 +859,9 @@ mysql&gt; select id,user_name,over from user_test;
       
     </div>
     
-      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
       
     
     
