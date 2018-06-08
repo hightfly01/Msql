@@ -476,9 +476,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" title="3. 索引优化" class="md-nav__link">
-    3. 索引优化
+  <a href="#3-1" title="3. 索引优化-1" class="md-nav__link">
+    3. 索引优化-1
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-2" title="3. 索引优化-2" class="md-nav__link">
+    3. 索引优化-2
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1_1" title="3-1：如何选择合适的列建立索引？" class="md-nav__link">
+    3-1：如何选择合适的列建立索引？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2_1" title="3-2：如何判断索引字段的离散度高？" class="md-nav__link">
+    3-2：如何判断索引字段的离散度高？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-3" title="3-3：重复索引和冗余索引的优化" class="md-nav__link">
+    3-3：重复索引和冗余索引的优化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -513,18 +547,6 @@
   <li class="md-nav__item">
     <a href="../5/" title="分库分表" class="md-nav__link">
       分库分表
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6/" title="事务" class="md-nav__link">
-      事务
     </a>
   </li>
 
@@ -633,9 +655,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" title="3. 索引优化" class="md-nav__link">
-    3. 索引优化
+  <a href="#3-1" title="3. 索引优化-1" class="md-nav__link">
+    3. 索引优化-1
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-2" title="3. 索引优化-2" class="md-nav__link">
+    3. 索引优化-2
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1_1" title="3-1：如何选择合适的列建立索引？" class="md-nav__link">
+    3-1：如何选择合适的列建立索引？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2_1" title="3-2：如何判断索引字段的离散度高？" class="md-nav__link">
+    3-2：如何判断索引字段的离散度高？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-3" title="3-3：重复索引和冗余索引的优化" class="md-nav__link">
+    3-3：重复索引和冗余索引的优化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -733,7 +789,7 @@
 <li>hash索引不支持部分索引查找，也不支持范围查找</li>
 <li>hash索引中hash码的计算可能存在hash冲突</li>
 </ul>
-<h2 id="3">3. 索引优化<a class="headerlink" href="#3" title="Permanent link">#</a></h2>
+<h2 id="3-1">3. 索引优化-1<a class="headerlink" href="#3-1" title="Permanent link">#</a></h2>
 <ul>
 <li>索引列上不能使用表达式或者函数</li>
 </ul>
@@ -784,6 +840,27 @@
 
 </li>
 </ul>
+<h2 id="3-2">3. 索引优化-2<a class="headerlink" href="#3-2" title="Permanent link">#</a></h2>
+<h3 id="3-1_1">3-1：如何选择合适的列建立索引？<a class="headerlink" href="#3-1_1" title="Permanent link">#</a></h3>
+<p><img alt="建立合适的索引" src="../建立合适的索引.png" /></p>
+<h3 id="3-2_1">3-2：如何判断索引字段的离散度高？<a class="headerlink" href="#3-2_1" title="Permanent link">#</a></h3>
+<p><img alt="离散度高的方法" src="../离散度高的方法.png" /></p>
+<h3 id="3-3">3-3：重复索引和冗余索引的优化<a class="headerlink" href="#3-3" title="Permanent link">#</a></h3>
+<ul>
+<li>重复索引</li>
+</ul>
+<p><img alt="重复索引" src="../重复索引.png" /></p>
+<ul>
+<li>冗余索引</li>
+</ul>
+<p><img alt="冗余索引" src="../冗余索引.png" /></p>
+<ul>
+<li>查看重复和冗余索引</li>
+</ul>
+<p>工具使用：</p>
+<p><img alt="查看重复和冗余索引的工具" src="../查看重复和冗余索引的工具.png" /></p>
+<p>工具查找重复和冗余索引的输出结果：</p>
+<p><img alt="使用工具查看重复和冗余索引" src="../使用工具查看重复和冗余索引.png" /></p>
                 
                   
                 

@@ -89,6 +89,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#1-count-max" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -399,9 +403,150 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SQL查询优化
+      </label>
+    
     <a href="./" title="SQL查询优化" class="md-nav__link md-nav__link--active">
       SQL查询优化
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-count-max" title="1. count()和 max()的函数优化" class="md-nav__link">
+    1. count()和 max()的函数优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1max" title="1-1:max()函数优化" class="md-nav__link">
+    1-1:max()函数优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2count" title="1-2.count()函数的优化" class="md-nav__link">
+    1-2.count()函数的优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-count-countcloumn" title="2.1： count(*) 和 count(cloumn)区别：" class="md-nav__link">
+    2.1： count(*) 和 count(cloumn)区别：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2. 子查询优化" class="md-nav__link">
+    2. 子查询优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1" title="2-1:子查询优化" class="md-nav__link">
+    2-1:子查询优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
+    2-2: 实例演示
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3group-by" title="3.优化group by查询" class="md-nav__link">
+    3.优化group by查询
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-sql" title="3.1 优化前的sql" class="md-nav__link">
+    3.1 优化前的sql
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-sql" title="3.2 优化后的sql" class="md-nav__link">
+    3.2 优化后的sql
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-limit" title="4. limit 查询优化" class="md-nav__link">
+    4. limit 查询优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-sql" title="4-1: 优化前的sql" class="md-nav__link">
+    4-1: 优化前的sql
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-sql" title="4-2: 优化后的sql" class="md-nav__link">
+    4-2: 优化后的sql
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -414,18 +559,6 @@
   <li class="md-nav__item">
     <a href="../5/" title="分库分表" class="md-nav__link">
       分库分表
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6/" title="事务" class="md-nav__link">
-      事务
     </a>
   </li>
 
@@ -454,6 +587,149 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-count-max" title="1. count()和 max()的函数优化" class="md-nav__link">
+    1. count()和 max()的函数优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1max" title="1-1:max()函数优化" class="md-nav__link">
+    1-1:max()函数优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2count" title="1-2.count()函数的优化" class="md-nav__link">
+    1-2.count()函数的优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-count-countcloumn" title="2.1： count(*) 和 count(cloumn)区别：" class="md-nav__link">
+    2.1： count(*) 和 count(cloumn)区别：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2. 子查询优化" class="md-nav__link">
+    2. 子查询优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1" title="2-1:子查询优化" class="md-nav__link">
+    2-1:子查询优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" title="2-2: 实例演示" class="md-nav__link">
+    2-2: 实例演示
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3group-by" title="3.优化group by查询" class="md-nav__link">
+    3.优化group by查询
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-sql" title="3.1 优化前的sql" class="md-nav__link">
+    3.1 优化前的sql
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-sql" title="3.2 优化后的sql" class="md-nav__link">
+    3.2 优化后的sql
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-limit" title="4. limit 查询优化" class="md-nav__link">
+    4. limit 查询优化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-sql" title="4-1: 优化前的sql" class="md-nav__link">
+    4-1: 优化前的sql
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-sql" title="4-2: 优化后的sql" class="md-nav__link">
+    4-2: 优化后的sql
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -464,7 +740,56 @@
                 
                   <h1>SQL查询优化</h1>
                 
-                <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
+                <h2 id="1-count-max">1. count()和 max()的函数优化<a class="headerlink" href="#1-count-max" title="Permanent link">#</a></h2>
+<h3 id="1-1max">1-1:max()函数优化<a class="headerlink" href="#1-1max" title="Permanent link">#</a></h3>
+<p><img alt="max函数查询" src="../max函数查询.png" /></p>
+<p><img alt="查看查询计划" src="../查看查询计划.png" /></p>
+<blockquote>
+<p>在查询过程中，我们发现sql执行计划中，type=all 使用了表扫描的操作。</p>
+<p>没有使用到索引。</p>
+</blockquote>
+<p>如何优化？</p>
+<p>需要在max()函数中的关键字段，创建索引。</p>
+<p><img alt="创建索引" src="../创建索引.png" /></p>
+<p>查看添加索引之后的sql查询计划</p>
+<p><img alt="查看添加索引的查询计划" src="../查看添加索引的查询计划.png" /></p>
+<h3 id="1-2count">1-2.count()函数的优化<a class="headerlink" href="#1-2count" title="Permanent link">#</a></h3>
+<p><img alt="count函数优化" src="../count函数优化.png" /></p>
+<h4 id="21-count-countcloumn">2.1： count(*) 和 count(cloumn)区别：<a class="headerlink" href="#21-count-countcloumn" title="Permanent link">#</a></h4>
+<div class="code"><pre><span></span>      count(*): 会统计出值为空行
+      count(cloumn)： 过滤到值为空的行
+</pre></div>
+
+
+<h2 id="2">2. 子查询优化<a class="headerlink" href="#2" title="Permanent link">#</a></h2>
+<h3 id="2-1">2-1:子查询优化<a class="headerlink" href="#2-1" title="Permanent link">#</a></h3>
+<p>子查询优化，通常情况下，优化为join查询。</p>
+<p><img alt="子查询优化" src="../子查询优化.png" /></p>
+<h3 id="2-2">2-2: 实例演示<a class="headerlink" href="#2-2" title="Permanent link">#</a></h3>
+<p>优化前：</p>
+<p><img alt="优化前查询" src="../优化前查询.png" /></p>
+<p>优化后：</p>
+<p><img alt="优化后查询" src="../优化后查询.png" /></p>
+<p><code>注意</code>： 使用distinct关键字去重复</p>
+<h2 id="3group-by">3.优化group by查询<a class="headerlink" href="#3group-by" title="Permanent link">#</a></h2>
+<h3 id="31-sql">3.1 优化前的sql<a class="headerlink" href="#31-sql" title="Permanent link">#</a></h3>
+<p><img alt="优化前的sql" src="../优化前的sql.png" /></p>
+<p><img alt="优化前缺陷" src="../优化前缺陷.png" /></p>
+<p><code>在关联查询中，使用group by的缺陷：</code></p>
+<blockquote>
+<p>在查询过程，会创建一个关联的临时表和文件排序的方式进行查询的。</p>
+</blockquote>
+<h3 id="32-sql">3.2 优化后的sql<a class="headerlink" href="#32-sql" title="Permanent link">#</a></h3>
+<p><img alt="优化后的sql" src="../优化后的sql.png" /></p>
+<h2 id="4-limit">4. limit 查询优化<a class="headerlink" href="#4-limit" title="Permanent link">#</a></h2>
+<h3 id="4-1-sql">4-1: 优化前的sql<a class="headerlink" href="#4-1-sql" title="Permanent link">#</a></h3>
+<p><img alt="优化前的sql" src="../优化前的sql.png" /></p>
+<p><img alt="优化前的执行计划" src="../优化前的执行计划.png" /></p>
+<h3 id="4-2-sql">4-2: 优化后的sql<a class="headerlink" href="#4-2-sql" title="Permanent link">#</a></h3>
+<p>使用索引或者主键进行order by操作：</p>
+<p><img alt="优化后的sql" src="../优化后的sql.png" /></p>
+<p>优化之后的查询计划：</p>
+<p><img alt="优化后的执行计划" src="../优化后的执行计划.png" /></p>
                 
                   
                 
