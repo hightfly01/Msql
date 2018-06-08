@@ -2,13 +2,78 @@
     "docs": [
         {
             "location": "/",
-            "text": "mysql \u5f00\u53d1\u5b9e\u6218\u6280\u5de7\n#",
+            "text": "mysql\u5b9e\u6218\u6280\u5de7\u548c\u4f18\u5316\n#\n\n\nSQL\u6280\u5de7\n#\n\n\n\u6b63\u786e\u4f7f\u7528join\u4ece\u53e5\n#\n\n\n\n\nSQL\u6807\u51c6\u4e2djoin\u7c7b\u578b\n\n\nInner Join\n\n\nLeft Outer Join\n\n\nRight Outer join\n\n\nFull join\n\n\nCross Join\n\n\n\n\n\u4e0ejoin\u76f8\u5173\u7684sql\u6280\u5de7\n#\n\n\n\n\n\u4f7f\u7528join\u66f4\u65b0\u8868\n\n\n\u4f7f\u7528join\u4f18\u5316\u5b50\u67e5\u8be2\n\n\n\u4f7f\u7528join\u4f18\u5316\u5b50\u805a\u5408\u5b50\u67e5\u8be2\n\n\n\u4f7f\u7528join\u5206\u7ec4\u9009\u62e9\u6570\u636e\u67e5\u8be2\n\n\n\n\n\u884c\u4e0e\u5217\u4e92\u8f6c\u7684SQL\u6280\u5de7\n#\n\n\n\n\n\u884c\u8f6c\u5217\n\n\n\u5355\u5217\u8f6c\u591a\u884c\n\n\n\u591a\u5217\u8f6c\u591a\u884c\n\n\n\n\n\u4e3b\u952e\u5220\u9664\u91cd\u590d\u6570\u636e\n#\n\n\n\n\n\u5220\u9664\u91cd\u590d\u6570\u636e\n\n\n\n\n\u5b50\u67e5\u8be2\u5b9e\u73b0\u591a\u5217\u8fc7\u6ee4\u7684sql\u6280\u5de7\n#\n\n\n\n\n\u5b50\u67e5\u8be2\u597d\u5904\n\n\n\u4f7f\u7528join\u5b9e\u73b0\u5b50\u67e5\u8be2\n\n\n\u5b50\u67e5\u8be2\u5b9e\u73b0\u591a\u5217\u8fc7\u6ee4\n\n\n\n\n\u540c\u4e00\u5c5e\u6027\u591a\u503c\u8fc7\u6ee4\n#\n\n\n\n\n\u4f7f\u7528join\u67e5\u8be2\n\n\n\n\n\u6027\u80fd\u4f18\u5316\n#\n\n\n\u5b58\u50a8\u5f15\u64ce\n#\n\n\n\n\nMyiSAM \u5b58\u50a8\u5f15\u64ce\n\n\ninnodb \u5b58\u50a8\u5f15\u64ce\n\n\n\n\n\u7d22\u5f15\u4f18\u5316\n#\n\n\n\n\nB-tree\u7d22\u5f15\n\n\nHash\u7d22\u5f15\n\n\n\u7d22\u5f15\u4f18\u53161\n\n\n\u7d22\u5f15\u4f18\u53162\n\n\n\n\nSQL\u67e5\u8be2\u4f18\u5316\n#\n\n\n\n\ncount\u548cmax\u51fd\u6570\u4f18\u5316\n\n\n\u5b50\u67e5\u8be2\u4f18\u5316\n\n\ngroup by\u4f18\u5316\n\n\nlimit\u4f18\u5316\n\n\n\n\n\u5206\u5e93\u5206\u8868\n#\n\n\n\n\n\u8868\u7684\u8303\u5f0f\u4f18\u5316\n\n\n\u8868\u7684\u53cd\u8303\u5f0f\u4f18\u5316\n\n\n\u8868\u7684\u5782\u76f4\u62c6\u5206\n\n\n\n\n\u6162\u67e5\u8be2\n#\n\n\n\n\n\u5f00\u542f\u6162\u67e5\u8be2\n\n\npt-query-digest\u5de5\u5177\u4f7f\u7528",
             "title": "\u9996\u9875"
         },
         {
             "location": "/#mysql",
             "text": "",
-            "title": "mysql \u5f00\u53d1\u5b9e\u6218\u6280\u5de7"
+            "title": "mysql\u5b9e\u6218\u6280\u5de7\u548c\u4f18\u5316"
+        },
+        {
+            "location": "/#sql",
+            "text": "",
+            "title": "SQL\u6280\u5de7"
+        },
+        {
+            "location": "/#join",
+            "text": "SQL\u6807\u51c6\u4e2djoin\u7c7b\u578b  Inner Join  Left Outer Join  Right Outer join  Full join  Cross Join",
+            "title": "\u6b63\u786e\u4f7f\u7528join\u4ece\u53e5"
+        },
+        {
+            "location": "/#joinsql",
+            "text": "\u4f7f\u7528join\u66f4\u65b0\u8868  \u4f7f\u7528join\u4f18\u5316\u5b50\u67e5\u8be2  \u4f7f\u7528join\u4f18\u5316\u5b50\u805a\u5408\u5b50\u67e5\u8be2  \u4f7f\u7528join\u5206\u7ec4\u9009\u62e9\u6570\u636e\u67e5\u8be2",
+            "title": "\u4e0ejoin\u76f8\u5173\u7684sql\u6280\u5de7"
+        },
+        {
+            "location": "/#sql_1",
+            "text": "\u884c\u8f6c\u5217  \u5355\u5217\u8f6c\u591a\u884c  \u591a\u5217\u8f6c\u591a\u884c",
+            "title": "\u884c\u4e0e\u5217\u4e92\u8f6c\u7684SQL\u6280\u5de7"
+        },
+        {
+            "location": "/#_1",
+            "text": "\u5220\u9664\u91cd\u590d\u6570\u636e",
+            "title": "\u4e3b\u952e\u5220\u9664\u91cd\u590d\u6570\u636e"
+        },
+        {
+            "location": "/#sql_2",
+            "text": "\u5b50\u67e5\u8be2\u597d\u5904  \u4f7f\u7528join\u5b9e\u73b0\u5b50\u67e5\u8be2  \u5b50\u67e5\u8be2\u5b9e\u73b0\u591a\u5217\u8fc7\u6ee4",
+            "title": "\u5b50\u67e5\u8be2\u5b9e\u73b0\u591a\u5217\u8fc7\u6ee4\u7684sql\u6280\u5de7"
+        },
+        {
+            "location": "/#_2",
+            "text": "\u4f7f\u7528join\u67e5\u8be2",
+            "title": "\u540c\u4e00\u5c5e\u6027\u591a\u503c\u8fc7\u6ee4"
+        },
+        {
+            "location": "/#_3",
+            "text": "",
+            "title": "\u6027\u80fd\u4f18\u5316"
+        },
+        {
+            "location": "/#_4",
+            "text": "MyiSAM \u5b58\u50a8\u5f15\u64ce  innodb \u5b58\u50a8\u5f15\u64ce",
+            "title": "\u5b58\u50a8\u5f15\u64ce"
+        },
+        {
+            "location": "/#_5",
+            "text": "B-tree\u7d22\u5f15  Hash\u7d22\u5f15  \u7d22\u5f15\u4f18\u53161  \u7d22\u5f15\u4f18\u53162",
+            "title": "\u7d22\u5f15\u4f18\u5316"
+        },
+        {
+            "location": "/#sql_3",
+            "text": "count\u548cmax\u51fd\u6570\u4f18\u5316  \u5b50\u67e5\u8be2\u4f18\u5316  group by\u4f18\u5316  limit\u4f18\u5316",
+            "title": "SQL\u67e5\u8be2\u4f18\u5316"
+        },
+        {
+            "location": "/#_6",
+            "text": "\u8868\u7684\u8303\u5f0f\u4f18\u5316  \u8868\u7684\u53cd\u8303\u5f0f\u4f18\u5316  \u8868\u7684\u5782\u76f4\u62c6\u5206",
+            "title": "\u5206\u5e93\u5206\u8868"
+        },
+        {
+            "location": "/#_7",
+            "text": "\u5f00\u542f\u6162\u67e5\u8be2  pt-query-digest\u5de5\u5177\u4f7f\u7528",
+            "title": "\u6162\u67e5\u8be2"
         },
         {
             "location": "/jq/1/",
